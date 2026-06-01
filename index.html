@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEPPYZ SALON | Premium Unisex Salon in Bhagalpur</title>
+  <meta name="description" content="Bhagalpur's premier unisex salon. Precision cuts, radiant skin, editorial makeup. Walk-ins welcome. Book on WhatsApp.">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+</head>
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">HEPPYZ</div>
+    <div class="loader-bar"><div class="loader-bar__fill"></div></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo-wrap">
+      <span class="nav-logo">HEPPYZ</span>
+      <span class="nav-logo-tagline">THE INDUSTRIAL ATELIER</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-ghost nav-book-btn" target="_blank" rel="noopener">BOOK NOW</a>
+
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <a href="index.html" class="mobile-menu__link">Home</a>
+    <a href="services.html" class="mobile-menu__link">Services</a>
+    <a href="gallery.html" class="mobile-menu__link">Gallery</a>
+    <a href="about.html" class="mobile-menu__link">About</a>
+    <a href="contact.html" class="mobile-menu__link">Contact</a>
+    <a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="mobile-menu__link text-gold" target="_blank" rel="noopener">Book Now</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 1: HERO -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="hero noise-overlay">
+    <div class="hero__bg-gradient"></div>
+    <div class="hero__inner">
+      <div class="hero__text">
+        <span class="hero__eyebrow">EST. 2024 · BHAGALPUR</span>
+        <h1 class="hero__title">
+          <span>WHERE STEEL </span>
+          <span class="hero__title-accent">Meets Silk</span>
+        </h1>
+        <p class="hero__subtitle">Premium unisex salon for those who treat their appearance as architecture. Precision cuts. Radiant skin. Styled for impact.</p>
+        <div class="hero__cta-row">
+          <a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-primary" target="_blank" rel="noopener">
+            <span class="material-icons-outlined">chat</span> BOOK ON WHATSAPP
+          </a>
+          <a href="services.html" class="btn-ghost">VIEW SERVICES →</a>
+        </div>
+        <div class="hero__trust-bar">
+          <span><span class="stars">★★★★★</span> 500+ Happy Clients</span>
+          <span>Unisex Salon</span>
+          <span>Walk-ins Welcome</span>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <div class="hero__divider"></div>
+        <img src="images/hero/hero-main.png" alt="Premium interior of Heppyz Salon featuring modern styling stations with warm amber lighting">
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 2: MARQUEE -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="marquee">
+    <div class="marquee__inner">
+      <span class="marquee__item">✦ PRECISION CUTS</span>
+      <span class="marquee__item">✦ HAIR COLOR</span>
+      <span class="marquee__item">✦ SKIN RITUALS</span>
+      <span class="marquee__item">✦ BRIDAL PACKAGES</span>
+      <span class="marquee__item">✦ FACIALS</span>
+      <span class="marquee__item">✦ MAKEUP</span>
+      <span class="marquee__item">✦ BEARD STYLING</span>
+      <span class="marquee__item">✦ PRECISION CUTS</span>
+      <span class="marquee__item">✦ HAIR COLOR</span>
+      <span class="marquee__item">✦ SKIN RITUALS</span>
+      <span class="marquee__item">✦ BRIDAL PACKAGES</span>
+      <span class="marquee__item">✦ FACIALS</span>
+      <span class="marquee__item">✦ MAKEUP</span>
+      <span class="marquee__item">✦ BEARD STYLING</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 3: SERVICES OVERVIEW -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section" style="background: var(--color-primary-surface);">
+    <div class="container">
+      <div data-reveal style="text-align:center; margin-bottom: 48px;">
+        <span class="eyebrow">OUR DISCIPLINE</span>
+        <h2 class="section-title">The Art of <em>Transformation</em></h2>
+        <p class="section-subtitle mx-auto">Three pillars. Infinite possibilities.</p>
+      </div>
+      <div class="services-grid" data-reveal-stagger>
+        <!-- Hair Care -->
+        <div class="service-card" data-card>
+          <div style="overflow:hidden;">
+            <img src="images/services/hair.png" alt="Professional hair styling service at Heppyz Salon" class="service-card__image">
+          </div>
+          <div class="service-card__body">
+            <span class="material-icons-outlined service-card__icon">content_cut</span>
+            <h3 class="service-card__name">HAIR CARE</h3>
+            <p class="service-card__desc">Structural cuts, precision coloring, and rejuvenating treatments tailored to your unique profile.</p>
+            <div class="service-card__price">FROM ₹299</div>
+            <a href="services.html" class="service-card__link">VIEW SERVICES →</a>
+          </div>
+        </div>
+        <!-- Skin Care -->
+        <div class="service-card" data-card>
+          <div style="overflow:hidden;">
+            <img src="images/services/skin.png" alt="Professional skin care facial treatment at Heppyz Salon" class="service-card__image">
+          </div>
+          <div class="service-card__body">
+            <span class="material-icons-outlined service-card__icon">face</span>
+            <h3 class="service-card__name">SKIN CARE</h3>
+            <p class="service-card__desc">Facials, detox rituals, and clinical precision treatments for radiant, healthy skin.</p>
+            <div class="service-card__price">FROM ₹249</div>
+            <a href="services.html" class="service-card__link">VIEW SERVICES →</a>
+          </div>
+        </div>
+        <!-- Makeup -->
+        <div class="service-card" data-card>
+          <div style="overflow:hidden;">
+            <img src="images/services/makeup.png" alt="Professional bridal and editorial makeup at Heppyz Salon" class="service-card__image">
+          </div>
+          <div class="service-card__body">
+            <span class="material-icons-outlined service-card__icon">brush</span>
+            <h3 class="service-card__name">MAKEUP</h3>
+            <p class="service-card__desc">Editorial, bridal, and event styling — from subtle enhancement to full transformation.</p>
+            <div class="service-card__price">FROM ₹699</div>
+            <a href="services.html" class="service-card__link">VIEW SERVICES →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 4: INTERIOR BENTO GRID -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div data-reveal style="text-align:center; margin-bottom: 48px;">
+        <span class="eyebrow">THE ATELIER</span>
+        <h2 class="section-title">A Space Built <em>for Excellence</em></h2>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-cell bento-cell--large">
+          <img src="images/hero/hero-main.png" alt="Heppyz Salon main hall with modern styling stations">
+        </div>
+        <div class="bento-cell">
+          <img src="images/interior/station.png" alt="Premium styling station at Heppyz Salon">
+        </div>
+        <div class="bento-cell">
+          <img src="images/interior/lounge.png" alt="Luxury waiting lounge at Heppyz Salon">
+        </div>
+        <div class="bento-cell bento-cell--text bento-cell--text-card">
+          <div>
+            <p style="font-family:var(--font-display); font-weight:700; font-size:20px; text-transform:uppercase; margin-bottom:8px;">Since 2024</p>
+            <p style="font-size:14px; line-height:1.6;">Bhagalpur's premium unisex destination for hair, skin, and style.</p>
+          </div>
+        </div>
+        <div class="bento-cell bento-cell--stats bento-cell--stats-card">
+          <div class="text-center">
+            <div class="bento-stat__number" data-counter="500">0+</div>
+            <div class="bento-stat__label">Clients</div>
+          </div>
+          <div class="text-center">
+            <div class="bento-stat__number" data-counter="10" data-suffix="+">0+</div>
+            <div class="bento-stat__label">Services</div>
+          </div>
+          <div class="text-center">
+            <div class="bento-stat__number" data-counter="6" data-suffix="">0</div>
+            <div class="bento-stat__label">Days Open</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 5: WHY CHOOSE US -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section" style="background: var(--color-primary-surface);">
+    <div class="container">
+      <div data-reveal style="text-align:center; margin-bottom: 48px;">
+        <h2 class="section-title">Why Bhagalpur Chooses <em>Heppyz</em></h2>
+      </div>
+      <div class="features-grid" data-reveal-stagger>
+        <div class="feature-card" data-card>
+          <span class="material-icons-outlined feature-card__icon">emoji_events</span>
+          <h3 class="feature-card__title">Expert Stylists</h3>
+          <p class="feature-card__desc">Trained professionals with years of experience in modern techniques.</p>
+        </div>
+        <div class="feature-card" data-card>
+          <span class="material-icons-outlined feature-card__icon">content_cut</span>
+          <h3 class="feature-card__title">Precision Approach</h3>
+          <p class="feature-card__desc">Every service tailored to your face structure and personal style.</p>
+        </div>
+        <div class="feature-card" data-card>
+          <span class="material-icons-outlined feature-card__icon">diamond</span>
+          <h3 class="feature-card__title">Premium Products</h3>
+          <p class="feature-card__desc">We use only salon-grade, skin-safe international brands.</p>
+        </div>
+        <div class="feature-card" data-card>
+          <span class="material-icons-outlined feature-card__icon">smartphone</span>
+          <h3 class="feature-card__title">Easy Booking</h3>
+          <p class="feature-card__desc">WhatsApp us to book instantly — no waiting, no hassle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 6: TESTIMONIALS -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div data-reveal style="margin-bottom: 40px;">
+        <span class="eyebrow">CLIENT VOICES</span>
+        <h2 class="section-title">Styled. Satisfied. <em>Returning.</em></h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">Finally found a salon in Bhagalpur that actually understands modern cuts. The staff listens before they act. Outstanding precision.</p>
+          <p class="testimonial-card__name">ARJUN MISHRA</p>
+          <p class="testimonial-card__role">Regular Client</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">The skin facial was absolutely worth it. My skin looked fresh for 2 weeks straight. Will never go anywhere else.</p>
+          <p class="testimonial-card__name">PRIYA SINGH</p>
+          <p class="testimonial-card__role">Skin Care Client</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote-mark">"</div>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">Came for a trim, left feeling completely transformed. The ambience alone is worth the visit — premium feel at a fair price.</p>
+          <p class="testimonial-card__name">RAHUL KUMAR</p>
+          <p class="testimonial-card__role">Hair Color Client</p>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-prev" aria-label="Previous testimonial">←</button>
+        <button class="slider-next" aria-label="Next testimonial">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 7: CTA BANNER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section>
+    <div class="cta-banner" data-reveal>
+      <div class="cta-banner__left">
+        <span class="eyebrow" style="color: var(--color-primary-dark);">READY FOR YOUR TRANSFORMATION?</span>
+        <h3>Book Your Visit — It Takes 30 Seconds</h3>
+        <p>WhatsApp us your preferred time and service. We'll confirm within minutes.</p>
+        <a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-dark" target="_blank" rel="noopener">
+          <span class="material-icons-outlined">chat</span> BOOK ON WHATSAPP
+        </a>
+      </div>
+      <div class="cta-banner__right">
+        <h4 style="font-family:var(--font-display); font-weight:700; font-size:14px; letter-spacing:0.15em; text-transform:uppercase; color:var(--color-accent-gold); margin-bottom:24px;">OPENING HOURS</h4>
+        <table class="hours-table">
+          <tr><td>Mon – Sat</td><td>9:15 AM – 9:00 PM</td></tr>
+          <tr><td>Sunday</td><td>10:00 AM – 7:00 PM</td></tr>
+        </table>
+        <div style="margin-top: 24px;">
+          <p style="font-size:14px; color:var(--color-text-secondary); margin-bottom:4px;">
+            <span class="material-icons-outlined" style="font-size:16px; vertical-align:middle;">location_on</span>
+            R B Surya Parshad Lane, Khanjarpur, Bhagalpur, Bihar
+          </p>
+          <p style="font-size:14px; color:var(--color-text-secondary);">
+            <span class="material-icons-outlined" style="font-size:16px; vertical-align:middle;">call</span>
+            <a href="tel:9297547403" style="color:var(--color-accent-gold);">929-754-7403</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand-name">HEPPYZ</div>
+        <p class="footer-brand-desc">Bhagalpur's premier unisex salon. Where precision meets elegance.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><span class="material-icons-outlined">photo_camera</span></a>
+          <a href="#" aria-label="Facebook"><span class="material-icons-outlined">public</span></a>
+          <a href="https://wa.me/919297547403" aria-label="WhatsApp" target="_blank" rel="noopener"><span class="material-icons-outlined">chat</span></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Hair Care</a>
+        <a href="services.html">Skin Care</a>
+        <a href="services.html">Makeup</a>
+        <a href="services.html">Bridal</a>
+        <a href="services.html">Beard Styling</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📍 R B Surya Parshad Lane, Khanjarpur, Bhagalpur, Bihar</p>
+        <p>📞 <a href="tel:9297547403">929-754-7403</a></p>
+        <p>💬 <a href="https://wa.me/919297547403" target="_blank" rel="noopener">WhatsApp</a></p>
+        <p>🕐 Mon-Sat 9:15 AM – 9:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Heppyz Salon. All Rights Reserved.</p>
+      <p>Designed for Precision</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" rel="noopener">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- LIGHTBOX (for gallery page, included globally for consistency) -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">✕</button>
+    <button class="lightbox__prev" aria-label="Previous">←</button>
+    <img class="lightbox__img" src="" alt="Gallery preview">
+    <button class="lightbox__next" aria-label="Next">→</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/whatsapp.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* ═══════════════════════════════════════════════════════
+   HEPPYZ SALON — Design Tokens (LOCKED)
+   ═══════════════════════════════════════════════════════ */
+
+:root {
+  /* Brand Colors — LOCKED */
+  --color-primary-dark:    #1a1f2e;
+  --color-primary-mid:     #252b3b;
+  --color-primary-surface: #2e3548;
+  --color-accent-gold:     #c9a84c;
+  --color-accent-gold-hot: #e8c56a;
+  --color-accent-gold-dim: #8a6f32;
+  --color-text-primary:    #f0ece4;
+  --color-text-secondary:  #a8a09a;
+  --color-text-muted:      #5e5a54;
+  --color-border:          rgba(201, 168, 76, 0.2);
+  --color-border-strong:   rgba(201, 168, 76, 0.5);
+  --color-footer-bg:       #0f1219;
+  --color-whatsapp:        #25D366;
+
+  /* Typography — LOCKED */
+  --font-display:   'Barlow Condensed', sans-serif;
+  --font-body:      'DM Sans', sans-serif;
+  --font-accent:    'Cormorant Garamond', serif;
+
+  /* Motion */
+  --ease-smooth:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap:      cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --duration-fast:  0.2s;
+  --duration-mid:   0.5s;
+  --duration-slow:  0.9s;
+
+  /* Spacing */
+  --section-pad-y:  clamp(64px, 10vw, 120px);
+  --section-pad-x:  clamp(20px, 5vw, 80px);
+  --container-max:  1280px;
+
+  /* Z-index scale */
+  --z-loader:    9999;
+  --z-mobile-menu: 1000;
+  --z-navbar:    900;
+  --z-whatsapp:  800;
+  --z-lightbox:  2000;
+}

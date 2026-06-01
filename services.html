@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing | HEPPYZ SALON Bhagalpur</title>
+  <meta name="description" content="Hair care, skin care, makeup & bridal services with transparent pricing. Heppyz Salon Bhagalpur. Book on WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/services.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><div class="loader-logo">HEPPYZ</div><div class="loader-bar"><div class="loader-bar__fill"></div></div></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar"><a href="index.html" class="nav-logo-wrap"><span class="nav-logo">HEPPYZ</span><span class="nav-logo-tagline">THE INDUSTRIAL ATELIER</span></a><div class="nav-links"><a href="index.html">Home</a><a href="services.html" class="active">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-ghost nav-book-btn" target="_blank" rel="noopener">BOOK NOW</a><button class="nav-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button></nav>
+  <div class="mobile-menu"><a href="index.html" class="mobile-menu__link">Home</a><a href="services.html" class="mobile-menu__link">Services</a><a href="gallery.html" class="mobile-menu__link">Gallery</a><a href="about.html" class="mobile-menu__link">About</a><a href="contact.html" class="mobile-menu__link">Contact</a></div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="images/interior/station.png" alt="Heppyz Salon interior">
+    </div>
+    <div class="page-hero__content">
+      <span class="eyebrow">THE SERVICE ATELIER</span>
+      <h1 class="section-title" style="margin-bottom:16px;">Every Service. Every Detail. <em>Priced Clearly.</em></h1>
+      <p class="section-subtitle mx-auto" style="text-align:center;">Choose your experience. Book in 30 seconds on WhatsApp.</p>
+    </div>
+  </section>
+
+  <!-- STICKY TABS -->
+  <div class="service-tabs">
+    <div class="service-tabs__inner">
+      <button class="service-tab active" data-target="#hair-care">Hair Care</button>
+      <button class="service-tab" data-target="#skin-care">Skin Care</button>
+      <button class="service-tab" data-target="#makeup">Makeup</button>
+      <button class="service-tab" data-target="#bridal">Bridal</button>
+    </div>
+  </div>
+
+  <!-- SERVICES CONTENT -->
+  <main class="container">
+
+    <!-- HAIR CARE -->
+    <section class="service-section" id="hair-care">
+      <div class="service-section__label">01 — HAIR CARE</div>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-item__name">Structural Cut</div>
+          <div class="service-item__desc">Precision geometry tailored to cranial architecture and face shape.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 45 mins</span>
+            <span class="service-item__price">₹299 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Structural Cut - ₹299">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Molten Gold Color</div>
+          <div class="service-item__desc">Rich tone saturation with depth-mapping color technique.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 90 mins</span>
+            <span class="service-item__price">₹799 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Molten Gold Color - ₹799">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Iron Sealant Treatment</div>
+          <div class="service-item__desc">Keratin reconstruction for industrial-strength shine and smoothness.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 60 mins</span>
+            <span class="service-item__price">₹599</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Iron Sealant Treatment - ₹599">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Hair Spa</div>
+          <div class="service-item__desc">Deep conditioning and scalp rejuvenation for healthier, stronger hair.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 60 mins</span>
+            <span class="service-item__price">₹399 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Hair Spa - ₹399">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Beard Styling</div>
+          <div class="service-item__desc">Sculpted precision for the modern gentleman's facial architecture.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 20 mins</span>
+            <span class="service-item__price">₹149 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Beard Styling - ₹149">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Head Massage</div>
+          <div class="service-item__desc">Stress-relief through expert pressure point activation and oil therapy.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 30 mins</span>
+            <span class="service-item__price">₹199</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Head Massage - ₹199">BOOK THIS ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKIN CARE -->
+    <section class="service-section" id="skin-care">
+      <div class="service-section__label">02 — SKIN CARE</div>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-item__name">Atelier Facial</div>
+          <div class="service-item__desc">Sculpting movements that redefine facial contours and restore glow.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 60 mins</span>
+            <span class="service-item__price">₹599 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Atelier Facial - ₹599">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Detox Ritual</div>
+          <div class="service-item__desc">Deep extraction and purification for toxin-free, radiant skin.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 45 mins</span>
+            <span class="service-item__price">₹499</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Detox Ritual - ₹499">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">De-Tan Treatment</div>
+          <div class="service-item__desc">Advanced depigmentation to restore your skin's natural luminosity.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 30 mins</span>
+            <span class="service-item__price">₹349 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="De-Tan Treatment - ₹349">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Anti-Acne Facial</div>
+          <div class="service-item__desc">Targeted treatment to reduce breakouts and clear stubborn acne.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 45 mins</span>
+            <span class="service-item__price">₹449 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Anti-Acne Facial - ₹449">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Cleanup</div>
+          <div class="service-item__desc">Essential surface refresh for an instantly cleaner, brighter face.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 30 mins</span>
+            <span class="service-item__price">₹249 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Cleanup - ₹249">BOOK THIS ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAKEUP -->
+    <section class="service-section" id="makeup">
+      <div class="service-section__label">03 — MAKEUP</div>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-item__name">Editorial Makeup</div>
+          <div class="service-item__desc">High-contrast, avant-garde precision for photoshoots and visual media.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 90 mins</span>
+            <span class="service-item__price">₹999 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Editorial Makeup - ₹999">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Party Makeup</div>
+          <div class="service-item__desc">Glamorous, long-lasting looks for celebrations and special nights out.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 60 mins</span>
+            <span class="service-item__price">₹699 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Party Makeup - ₹699">BOOK THIS ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRIDAL -->
+    <section class="service-section" id="bridal">
+      <div class="service-section__label">04 — BRIDAL</div>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-item__name">Bridal Makeup</div>
+          <div class="service-item__desc">Long-wear architectural makeup designed for the grandest day of your life.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 3–4 hrs</span>
+            <span class="service-item__price">₹2499 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Bridal Makeup - ₹2499">BOOK THIS ↗</button>
+        </div>
+        <div class="service-item">
+          <div class="service-item__name">Engagement Look</div>
+          <div class="service-item__desc">Complete styling for your ring ceremony — hair, makeup, and finishing touches.</div>
+          <div class="service-item__meta">
+            <span class="service-item__duration">⏱ 2 hrs</span>
+            <span class="service-item__price">₹1499 onwards</span>
+          </div>
+          <button class="service-item__book" data-wa-book="Engagement Look - ₹1499">BOOK THIS ↗</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- BOOKING STRIP -->
+  <section class="booking-strip" data-reveal>
+    <p>Not sure which service? WhatsApp us and we'll guide you.</p>
+    <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20need%20help%20choosing%20a%20service." class="btn-dark" target="_blank" rel="noopener" style="background:var(--color-primary-dark); color:var(--color-accent-gold); display:inline-flex; align-items:center; gap:8px; padding:14px 32px; font-family:var(--font-display); font-weight:700; font-size:13px; letter-spacing:0.12em; text-transform:uppercase;">
+      <span class="material-icons-outlined">chat</span> CHAT WITH US ON WHATSAPP
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer"><div class="footer-grid"><div class="footer-col"><div class="footer-brand-name">HEPPYZ</div><p class="footer-brand-desc">Bhagalpur's premier unisex salon. Where precision meets elegance.</p><div class="footer-social"><a href="#" aria-label="Instagram"><span class="material-icons-outlined">photo_camera</span></a><a href="#" aria-label="Facebook"><span class="material-icons-outlined">public</span></a><a href="https://wa.me/919297547403" aria-label="WhatsApp" target="_blank" rel="noopener"><span class="material-icons-outlined">chat</span></a></div></div><div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-col"><h4>Services</h4><a href="services.html">Hair Care</a><a href="services.html">Skin Care</a><a href="services.html">Makeup</a><a href="services.html">Bridal</a><a href="services.html">Beard Styling</a></div><div class="footer-col"><h4>Contact</h4><p>📍 R B Surya Parshad Lane, Khanjarpur, Bhagalpur, Bihar</p><p>📞 <a href="tel:9297547403">929-754-7403</a></p><p>💬 <a href="https://wa.me/919297547403" target="_blank" rel="noopener">WhatsApp</a></p><p>🕐 Mon-Sat 9:15 AM – 9:00 PM</p></div></div><div class="footer-bottom"><p>© 2025 Heppyz Salon. All Rights Reserved.</p><p>Designed for Precision</p></div></footer>
+
+  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" rel="noopener"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/whatsapp.js" defer></script>
+</body>
+</html>
