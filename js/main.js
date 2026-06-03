@@ -1,13 +1,18 @@
+'use strict';
 /* ═══════════════════════════════════════════════════════
    HEPPYZ SALON — Main JavaScript
    Lenis Smooth Scroll · Navbar · Mobile Menu · Loader
    ═══════════════════════════════════════════════════════ */
 
+(function () {
+
 // ─── 1. LENIS SMOOTH SCROLL ───
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smooth: true,
+  smooth: !prefersReducedMotion,
 });
 
 function raf(time) {
@@ -56,13 +61,24 @@ if (menuBtn && mobileMenu) {
   menuBtn.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('is-open');
     menuBtn.classList.toggle('is-active');
+    menuBtn.setAttribute('aria-expanded', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
 
     if (isOpen) {
-      gsap.fromTo('.mobile-menu__link',
-        { opacity: 0, x: -30 },
-        { opacity: 1, x: 0, stagger: 0.07, duration: 0.4, ease: 'power2.out' }
-      );
+      // Focus trap: focus first link
+      const firstLink = mobileMenu.querySelector('.mobile-menu__link');
+      if (firstLink) firstLink.focus();
+
+      if (!prefersReducedMotion) {
+        gsap.fromTo('.mobile-menu__link',
+          { opacity: 0, x: -30 },
+          { opacity: 1, x: 0, stagger: 0.07, duration: 0.4, ease: 'power2.out' }
+        );
+      } else {
+        document.querySelectorAll('.mobile-menu__link').forEach(link => {
+          link.style.opacity = '1';
+        });
+      }
     }
   });
 
@@ -70,8 +86,20 @@ if (menuBtn && mobileMenu) {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
       menuBtn.classList.remove('is-active');
+      menuBtn.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
     });
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('is-open')) {
+      mobileMenu.classList.remove('is-open');
+      menuBtn.classList.remove('is-active');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+      menuBtn.focus();
+    }
   });
 }
 
@@ -239,3 +267,5 @@ serviceTabs.forEach(tab => {
     }
   });
 });
+
+})();

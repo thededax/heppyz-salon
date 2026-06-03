@@ -1,27 +1,31 @@
-/* ═══ SERVICES PAGE ═══ */
+/* ═══ SERVICES PAGE — Stitch Design System ═══ */
 
 .page-hero {
   position: relative; min-height: 60vh;
   display: flex; align-items: center; justify-content: center;
   text-align: center; overflow: hidden;
-  background: var(--color-primary-dark);
+  background: var(--bg);
 }
-.page-hero__bg {
-  position: absolute; inset: 0; z-index: 0;
+.page-hero__bg { position: absolute; inset: 0; z-index: 0; }
+.page-hero__bg img {
+  width: 100%; height: 100%; object-fit: cover; opacity: 0.4;
+  filter: grayscale(100%);
 }
-.page-hero__bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.2; }
 .page-hero__bg::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(to bottom, transparent, var(--color-primary-dark));
+  background: linear-gradient(to top, var(--bg), transparent);
 }
-.page-hero__content { position: relative; z-index: 1; padding: 100px var(--section-pad-x) 60px; }
+.page-hero__content {
+  position: relative; z-index: 1;
+  padding: 100px var(--section-pad-x) 60px;
+}
 
 /* Sticky Tabs */
 .service-tabs {
   position: sticky; top: 72px; z-index: 50;
-  background: rgba(26, 31, 46, 0.95);
+  background: rgba(var(--bg-rgb), 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
   overflow-x: auto;
   -ms-overflow-style: none; scrollbar-width: none;
 }
@@ -33,82 +37,70 @@
 }
 .service-tab {
   padding: 16px 24px;
-  font-family: var(--font-display); font-weight: 600; font-size: 13px;
+  font-family: var(--font-headline); font-weight: 600; font-size: 13px;
   letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--color-text-muted); cursor: pointer;
+  color: var(--text-muted); cursor: pointer;
   border-bottom: 2px solid transparent;
-  transition: all 0.3s; white-space: nowrap;
+  transition: all var(--dur-mid); white-space: nowrap;
 }
 .service-tab:hover, .service-tab.active {
-  color: var(--color-accent-gold);
-  border-bottom-color: var(--color-accent-gold);
+  color: var(--gold); border-bottom-color: var(--gold);
 }
 
 /* Service Section */
 .service-section {
   padding: var(--section-pad-y) 0;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 .service-section__label {
-  font-family: var(--font-display); font-weight: 600; font-size: 13px;
-  letter-spacing: 0.15em; color: var(--color-accent-gold);
-  margin-bottom: 32px;
+  font-family: var(--font-headline); font-weight: 600; font-size: 13px;
+  letter-spacing: 0.15em; color: var(--gold); margin-bottom: 32px;
 }
-.service-list {
-  display: grid; grid-template-columns: 1fr; gap: 16px;
-}
-@media (min-width: 768px) {
-  .service-list { grid-template-columns: 1fr 1fr; }
-}
+.service-list { display: grid; grid-template-columns: 1fr; gap: 16px; }
+@media (min-width: 768px) { .service-list { grid-template-columns: 1fr 1fr; } }
 
 .service-item {
-  background: var(--color-primary-mid);
-  border: 1px solid var(--color-border);
-  padding: 24px; border-left: 3px solid var(--color-accent-gold);
+  background: var(--surface-high);
+  border: 1px solid var(--border);
+  padding: 24px; border-left: 3px solid var(--gold);
   display: flex; flex-direction: column; gap: 8px;
-  transition: border-color 0.3s, transform 0.3s;
+  transition: border-color var(--dur-mid), transform var(--dur-mid);
+  border-radius: var(--radius-sm);
 }
-.service-item:hover {
-  border-color: var(--color-accent-gold);
-  transform: translateY(-2px);
-}
+.service-item:hover { border-color: var(--gold); transform: translateY(-2px); }
 .service-item__name {
-  font-family: var(--font-display); font-weight: 700; font-size: 18px;
-  color: var(--color-text-primary);
+  font-family: var(--font-headline); font-weight: 700; font-size: 18px;
+  color: var(--text-bright);
 }
-.service-item__desc {
-  font-size: 13px; color: var(--color-text-secondary); font-weight: 300;
-}
+.service-item__desc { font-size: 13px; color: var(--text-secondary); font-weight: 300; }
 .service-item__meta {
   display: flex; justify-content: space-between; align-items: center;
   margin-top: 8px; flex-wrap: wrap; gap: 8px;
 }
-.service-item__duration {
-  font-size: 12px; color: var(--color-text-muted);
-}
+.service-item__duration { font-size: 12px; color: var(--text-muted); }
 .service-item__price {
-  font-family: var(--font-display); font-weight: 600; font-size: 20px;
-  color: var(--color-accent-gold);
+  font-family: var(--font-headline); font-weight: 600; font-size: 20px; color: var(--gold);
 }
 .service-item__book {
-  font-family: var(--font-display); font-size: 11px; font-weight: 600;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--color-accent-gold);
-  border: 1px solid var(--color-border-strong);
-  padding: 8px 16px; cursor: pointer;
-  transition: all 0.3s;
+  font-family: var(--font-headline); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold);
+  border: 1px solid var(--border-gold); padding: 8px 16px; cursor: pointer;
+  transition: all var(--dur-mid); border-radius: var(--radius-sm);
 }
-.service-item__book:hover {
-  background: var(--color-accent-gold);
-  color: var(--color-primary-dark);
-}
+.service-item__book:hover { background: var(--gold); color: var(--gold-dark); }
 
 /* Booking Strip */
 .booking-strip {
-  background: var(--color-accent-gold);
-  padding: 40px; text-align: center;
+  background: var(--gold); padding: 40px; text-align: center;
 }
 .booking-strip p {
   font-family: var(--font-body); font-size: 16px;
-  color: var(--color-primary-dark); margin-bottom: 20px;
+  color: var(--gold-dark); margin-bottom: 20px;
+}
+.booking-strip__cta {
+  background: var(--bg); color: var(--gold);
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 32px;
+  font-family: var(--font-headline); font-weight: 700;
+  font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase;
 }

@@ -1,44 +1,70 @@
 /* ═══════════════════════════════════════════════════════
-   HEPPYZ SALON — Design Tokens (LOCKED)
+   HEPPYZ SALON — Design Tokens (Stitch Design System)
+   Deep Industrial Dark · Gold Accent · Architectural
    ═══════════════════════════════════════════════════════ */
 
 :root {
-  /* Brand Colors — LOCKED */
-  --color-primary-dark:    #1a1f2e;
-  --color-primary-mid:     #252b3b;
-  --color-primary-surface: #2e3548;
-  --color-accent-gold:     #c9a84c;
-  --color-accent-gold-hot: #e8c56a;
-  --color-accent-gold-dim: #8a6f32;
-  --color-text-primary:    #f0ece4;
-  --color-text-secondary:  #a8a09a;
-  --color-text-muted:      #5e5a54;
-  --color-border:          rgba(201, 168, 76, 0.2);
-  --color-border-strong:   rgba(201, 168, 76, 0.5);
-  --color-footer-bg:       #0f1219;
-  --color-whatsapp:        #25D366;
+  /* ── Background Scale ── */
+  --bg:              #09151c;
+  --bg-rgb:          9, 21, 28;
+  --surface-lowest:  #050F17;
+  --surface-low:     #121D25;
+  --surface:         #162129;
+  --surface-high:    #202b34;
+  --surface-highest: #2b363f;
+  --surface-card:    #3E5668;
+  --surface-testi:   #2A3D4C;
+  --surface-services:#1D2B35;
 
-  /* Typography — LOCKED */
-  --font-display:   'Barlow Condensed', sans-serif;
-  --font-body:      'DM Sans', sans-serif;
-  --font-accent:    'Cormorant Garamond', serif;
+  /* ── Accent / Primary ── */
+  --gold:            #f3bf51;
+  --gold-hot:        #ffdea3;
+  --gold-dim:        #c4952a;
+  --gold-container:  #c4952a;
+  --gold-dark:       #402d00;
+  --gold-on:         #261900;
+  --gold-rgb:        243, 191, 81;
 
-  /* Motion */
-  --ease-smooth:    cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-snap:      cubic-bezier(0.68, -0.55, 0.27, 1.55);
-  --duration-fast:  0.2s;
-  --duration-mid:   0.5s;
-  --duration-slow:  0.9s;
+  /* ── Text ── */
+  --text-bright:     #EEF3F7;
+  --text-primary:    #d8e4ef;
+  --text-secondary:  #8AA0AE;
+  --text-muted:      #5e6d78;
 
-  /* Spacing */
-  --section-pad-y:  clamp(64px, 10vw, 120px);
-  --section-pad-x:  clamp(20px, 5vw, 80px);
-  --container-max:  1280px;
+  /* ── Borders ── */
+  --border:          rgba(255, 255, 255, 0.08);
+  --border-strong:   rgba(255, 255, 255, 0.15);
+  --border-gold:     rgba(243, 191, 81, 0.3);
 
-  /* Z-index scale */
-  --z-loader:    9999;
-  --z-mobile-menu: 1000;
-  --z-navbar:    900;
-  --z-whatsapp:  800;
-  --z-lightbox:  2000;
+  /* ── Semantic ── */
+  --error:           #ffb4ab;
+  --whatsapp:        #25D366;
+  --footer-bg:       #050F17;
+
+  /* ── Typography ── */
+  --font-headline:   'Barlow Condensed', sans-serif;
+  --font-body:       'DM Sans', sans-serif;
+  --font-label:      'Raleway', sans-serif;
+
+  /* ── Motion ── */
+  --ease-smooth:     cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap:       cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  --dur-fast:        0.2s;
+  --dur-mid:         0.3s;
+  --dur-slow:        0.7s;
+
+  /* ── Layout ── */
+  --section-pad-y:   clamp(64px, 10vw, 96px);
+  --section-pad-x:   clamp(20px, 5vw, 32px);
+  --container-max:   1280px;
+  --radius-sm:       2px;
+  --radius-md:       4px;
+  --radius-lg:       8px;
+
+  /* ── Z-index ── */
+  --z-loader:        9999;
+  --z-mobile-menu:   1000;
+  --z-navbar:        900;
+  --z-whatsapp:      800;
+  --z-lightbox:      2000;
 }

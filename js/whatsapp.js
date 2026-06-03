@@ -1,6 +1,9 @@
+'use strict';
 /* ═══════════════════════════════════════════════════════
    HEPPYZ SALON — WhatsApp Booking Logic
    ═══════════════════════════════════════════════════════ */
+
+(function () {
 
 const WHATSAPP_NUMBER = '919297547403';
 
@@ -31,3 +34,5 @@ if (bookingForm) {
     window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
   });
 }
+
+})();

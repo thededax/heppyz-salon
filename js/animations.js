@@ -1,8 +1,15 @@
+'use strict';
 /* ═══════════════════════════════════════════════════════
    HEPPYZ SALON — GSAP Scroll Animations
    ═══════════════════════════════════════════════════════ */
 
+(function () {
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  // ─── CHECK REDUCED MOTION ───
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) return; // Skip all GSAP animations
 
   // ─── HERO ENTRANCE (Homepage) ───
   if (document.querySelector('.hero')) {
@@ -20,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── SECTION FADE-UP ───
   gsap.utils.toArray('[data-reveal]').forEach(el => {
     gsap.from(el, {
-      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' },
+      scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none', once: true },
       opacity: 0, y: 50, duration: 0.8, ease: 'power2.out',
     });
   });
@@ -29,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.utils.toArray('[data-reveal-stagger]').forEach(container => {
     const cards = container.querySelectorAll('[data-card]');
     gsap.from(cards, {
-      scrollTrigger: { trigger: container, start: 'top 85%' },
+      scrollTrigger: { trigger: container, start: 'top 85%', once: true },
       opacity: 0, y: 60, stagger: 0.12, duration: 0.7, ease: 'power2.out',
     });
   });
@@ -72,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── BENTO GRID REVEAL ───
   gsap.utils.toArray('.bento-cell').forEach((cell, i) => {
     gsap.from(cell, {
-      scrollTrigger: { trigger: cell, start: 'top 90%' },
+      scrollTrigger: { trigger: cell, start: 'top 90%', once: true },
       clipPath: 'inset(0 0 100% 0)', duration: 0.8, delay: i * 0.07,
       ease: 'power3.out',
     });
@@ -95,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── GALLERY ITEMS ───
   gsap.utils.toArray('.gallery-item').forEach((item, i) => {
     gsap.from(item, {
-      scrollTrigger: { trigger: item, start: 'top 92%' },
+      scrollTrigger: { trigger: item, start: 'top 92%', once: true },
       opacity: 0, y: 30, duration: 0.6, delay: (i % 3) * 0.08,
       ease: 'power2.out',
     });
@@ -104,10 +111,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── SERVICE ITEMS ───
   gsap.utils.toArray('.service-item').forEach((item, i) => {
     gsap.from(item, {
-      scrollTrigger: { trigger: item, start: 'top 90%' },
+      scrollTrigger: { trigger: item, start: 'top 90%', once: true },
       opacity: 0, x: -30, duration: 0.5, delay: (i % 2) * 0.1,
       ease: 'power2.out',
     });
   });
 
 });
+
+})();
