@@ -105,9 +105,9 @@ body {
 }
 .skip-link:focus { top: 8px; }
 
-/* ── Grayscale Hover (Stitch pattern) ── */
+/* ── Grayscale Hover (Softened — show color by default) ── */
 .img-grayscale {
-  filter: grayscale(100%);
+  filter: grayscale(40%);
   transition: filter 0.7s ease, transform 0.7s ease;
 }
 .img-grayscale:hover {
@@ -126,6 +126,26 @@ body {
   padding: 8px 16px;
 }
 
+/* ── Scroll Reveal Initial States ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+}
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+[data-reveal-stagger] > * {
+  opacity: 0;
+  transform: translateY(30px);
+}
+[data-reveal-stagger] > *.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s var(--ease-smooth), transform 0.6s var(--ease-smooth);
+}
+
 /* ── Reduced Motion ── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -134,4 +154,50 @@ body {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  [data-reveal], [data-reveal-stagger] > * {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
+
+/* ── Global Mobile Size Compressions ── */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 56px !important; /* Space for bottom nav bar */
+  }
+  
+  .section-title {
+    font-size: 22px !important;
+    letter-spacing: 0.03em !important;
+    line-height: 1.1 !important;
+  }
+  
+  .eyebrow {
+    font-size: 8px !important;
+    letter-spacing: 0.25em !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .section-subtitle {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    margin-top: 8px !important;
+  }
+  
+  /* Compress spacing */
+  .section {
+    padding: var(--section-pad-y) 0 !important; /* Evaluates to 28px */
+  }
+  
+  .container {
+    padding: 0 var(--section-pad-x) !important; /* Evaluates to 16px */
+  }
+  
+  /* Shrink content images globally on mobile */
+  img:not(.nav-logo-mobile):not(.nav-logo-desktop):not(.whatsapp-float img):not(.loader-logo) {
+    max-height: 220px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+

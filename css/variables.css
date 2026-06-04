@@ -68,3 +68,11 @@
   --z-whatsapp:      800;
   --z-lightbox:      2000;
 }
+
+@media (max-width: 767px) {
+  :root {
+    --section-pad-y: 28px;
+    --section-pad-x: 16px;
+  }
+}
+
