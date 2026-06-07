@@ -42,6 +42,11 @@
 }
 .btn-dark:hover { transform: translateY(-2px); }
 
+.btn-primary i, .btn-ghost i, .btn-dark i {
+  font-size: 18px;
+  line-height: 1;
+}
+
 /* ══════════════════════════════════════════════
    NAVBAR — Glass Industrial
    ══════════════════════════════════════════════ */
@@ -349,7 +354,7 @@
   box-shadow: 0 0 15px rgba(var(--gold-rgb), 0.4);
   transform: scale(1.05);
 }
-.whatsapp-float svg { width: 24px; height: 24px; fill: currentColor; }
+.whatsapp-float svg, .whatsapp-float i { width: 24px; height: 24px; font-size: 24px; display: inline-flex; align-items: center; justify-content: center; fill: currentColor; }
 .whatsapp-float span { display: none; }
 @media (min-width: 768px) { .whatsapp-float span { display: inline; } }
 
@@ -428,6 +433,10 @@
 .footer-social a {
   color: var(--text-secondary); font-size: 20px;
   transition: color var(--dur-mid);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.footer-social a i {
+  font-size: 20px;
 }
 .footer-social a:hover { color: var(--text-bright); }
 .footer-bottom {
@@ -477,7 +486,8 @@
   .footer-social {
     gap: 16px !important;
   }
-  .footer-social a .material-symbols-outlined {
+  .footer-social a .material-symbols-outlined,
+  .footer-social a i {
     font-size: 18px !important;
   }
   .footer-bottom {
