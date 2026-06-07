@@ -108,49 +108,57 @@
 /* ── Services Page Mobile Compressions ── */
 @media (max-width: 767px) {
   .page-hero {
-    min-height: 25vh !important;
+    min-height: 20vh !important;
   }
   .page-hero__content {
-    padding: 70px var(--section-pad-x) 16px !important;
+    padding: 60px var(--section-pad-x) 12px !important;
   }
   
   .service-tabs {
     top: 42px !important;
   }
   .service-tab {
-    padding: 10px 14px !important;
+    padding: 8px 12px !important;
+    font-size: 10px !important;
+  }
+  
+  .service-section {
+    padding: 20px 0 !important;
+  }
+  .service-section__label {
+    margin-bottom: 12px !important;
     font-size: 11px !important;
   }
   
-  .service-section__label {
-    margin-bottom: 16px !important;
-  }
-  
   .service-item {
-    padding: 16px !important;
-    gap: 4px !important;
+    padding: 12px !important;
+    gap: 3px !important;
+    border-left-width: 2px !important;
   }
   .service-item__name {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   .service-item__desc {
-    font-size: 12px !important;
+    font-size: 11px !important;
     line-height: 1.4 !important;
   }
+  .service-item__duration {
+    font-size: 10px !important;
+  }
   .service-item__price {
-    font-size: 16px !important;
+    font-size: 15px !important;
   }
   .service-item__book {
-    padding: 6px 12px !important;
+    padding: 5px 10px !important;
     font-size: 9px !important;
   }
   
   .booking-strip {
-    padding: 20px !important;
+    padding: 16px !important;
   }
   .booking-strip p {
-    font-size: 13px !important;
-    margin-bottom: 12px !important;
+    font-size: 12px !important;
+    margin-bottom: 10px !important;
   }
   .booking-strip__cta {
     padding: 10px 20px !important;

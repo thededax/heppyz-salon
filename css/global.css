@@ -163,41 +163,38 @@ body {
 /* ── Global Mobile Size Compressions ── */
 @media (max-width: 767px) {
   body {
-    padding-bottom: 56px !important; /* Space for bottom nav bar */
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
   }
   
   .section-title {
-    font-size: 22px !important;
+    font-size: 24px !important;
     letter-spacing: 0.03em !important;
-    line-height: 1.1 !important;
+    line-height: 1.15 !important;
   }
   
   .eyebrow {
-    font-size: 8px !important;
+    font-size: 11px !important;
     letter-spacing: 0.25em !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 8px !important;
   }
   
   .section-subtitle {
-    font-size: 13px !important;
-    line-height: 1.5 !important;
-    margin-top: 8px !important;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-top: 10px !important;
   }
   
   /* Compress spacing */
   .section {
-    padding: var(--section-pad-y) 0 !important; /* Evaluates to 28px */
+    padding: var(--section-pad-y) 0 !important;
   }
   
   .container {
-    padding: 0 var(--section-pad-x) !important; /* Evaluates to 16px */
+    padding: 0 var(--section-pad-x) !important;
   }
-  
-  /* Shrink content images globally on mobile */
-  img:not(.nav-logo-mobile):not(.nav-logo-desktop):not(.whatsapp-float img):not(.loader-logo) {
-    max-height: 220px;
-    width: 100%;
-    object-fit: cover;
-  }
+
+  /* REMOVED: Global img max-height: 220px rule.
+     Images should be sized per-section using aspect-ratio
+     or section-specific classes, not a blanket height cap. */
 }
 

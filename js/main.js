@@ -171,8 +171,13 @@ document.addEventListener('DOMContentLoaded', () => {
       slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
     });
 
+    // Only auto-scroll on tablet (768–991px), disable on mobile to avoid touch jank
+    function shouldAutoScroll() {
+      return window.innerWidth >= 768 && window.innerWidth < 992;
+    }
+
     let autoScroll = setInterval(() => {
-      if (window.innerWidth >= 992) return;
+      if (!shouldAutoScroll()) return;
       if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
         slider.scrollTo({ left: 0, behavior: 'smooth' });
       } else {
@@ -183,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slider.addEventListener('mouseenter', () => clearInterval(autoScroll));
     slider.addEventListener('mouseleave', () => {
       autoScroll = setInterval(() => {
-        if (window.innerWidth >= 992) return;
+        if (!shouldAutoScroll()) return;
         if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
           slider.scrollTo({ left: 0, behavior: 'smooth' });
         } else {

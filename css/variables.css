@@ -71,7 +71,7 @@
 
 @media (max-width: 767px) {
   :root {
-    --section-pad-y: 28px;
+    --section-pad-y: 40px;
     --section-pad-x: 16px;
   }
 }

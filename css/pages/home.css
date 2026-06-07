@@ -112,7 +112,7 @@
 .info-banner__inner {
   max-width: var(--container-max); margin: 0 auto;
   padding: 0 var(--section-pad-x);
-  display: flex; flex-direction: column; gap: 14px;
+  display: flex; flex-direction: column; gap: 16px;
   align-items: center; justify-content: space-between;
 }
 @media (min-width: 768px) {
@@ -259,37 +259,85 @@
 /* ── Home Page Mobile Compressions ── */
 @media (max-width: 767px) {
   .hero {
-    min-height: 70vh !important;
+    min-height: 80vh !important;
   }
   .hero__inner {
-    padding: 80px var(--section-pad-x) 24px !important;
+    padding: 100px var(--section-pad-x) 40px !important;
   }
   .hero__title {
-    font-size: 32px !important;
-    margin-bottom: 12px !important;
+    font-size: 36px !important;
+    margin-bottom: 16px !important;
   }
   .hero__eyebrow {
-    font-size: 9px !important;
-    margin-bottom: 12px !important;
-    gap: 8px !important;
+    font-size: 10px !important;
+    margin-bottom: 16px !important;
+    gap: 10px !important;
   }
   .hero__eyebrow::before {
-    width: 20px !important;
+    width: 24px !important;
   }
   .hero__subtitle {
-    font-size: 13px !important;
-    margin-bottom: 20px !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 24px !important;
   }
   .hero__cta-row {
-    gap: 10px !important;
-    margin-bottom: 20px !important;
+    gap: 12px !important;
+    margin-bottom: 24px !important;
+    flex-direction: column !important;
+  }
+  .hero__cta-row .btn-primary,
+  .hero__cta-row .btn-ghost {
+    width: 100% !important;
+    justify-content: center !important;
   }
   .hero__trust-bar {
     padding-top: 16px !important;
-    gap: 12px !important;
+    gap: 14px !important;
+    font-size: 13px !important;
   }
   
-  /* Bento Grid Mobile */
+  /* Services Section Mobile — compact */
+  .services-grid {
+    gap: 16px !important;
+  }
+  .service-card {
+    padding: 20px !important;
+    border-top-width: 3px !important;
+  }
+  .service-card__icon {
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  .service-card__name {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+  .service-card__desc {
+    font-size: 12px !important;
+    margin-bottom: 16px !important;
+    line-height: 1.5 !important;
+  }
+  .service-card__price-row {
+    padding: 5px 0 !important;
+    font-size: 12px !important;
+  }
+  .service-card__link {
+    margin-top: 12px !important;
+    font-size: 11px !important;
+  }
+  .service-card__image {
+    height: 140px !important;
+  }
+  
+  /* Bento Grid Mobile — use aspect-ratio instead of global height cap */
+  .bento-cell {
+    aspect-ratio: 16 / 9;
+  }
+  .bento-cell--text,
+  .bento-cell--stats {
+    aspect-ratio: auto;
+  }
   .bento-cell--text {
     padding: 16px !important;
   }
@@ -305,25 +353,52 @@
   .bento-text-desc {
     font-size: 12px !important;
   }
+  .img-label {
+    font-size: 12px !important;
+    padding: 4px 10px !important;
+  }
   
-  /* CTA Banner Mobile */
-  .cta-banner__left, .cta-banner__right {
-    padding: 24px 16px !important;
+  /* CTA Banner Mobile — rearrange: hours first, then booking CTA */
+  .cta-banner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .cta-banner__right {
+    order: -1 !important;
+    padding: 24px 20px !important;
+  }
+  .cta-banner__left {
+    padding: 24px 20px !important;
   }
   .cta-banner__left h3 {
     font-size: 20px !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 10px !important;
   }
   .cta-banner__left p {
-    font-size: 12px !important;
+    font-size: 13px !important;
     margin-bottom: 16px !important;
+  }
+  .cta-banner__left .btn-dark {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+    font-size: 14px !important;
+    padding: 16px 24px !important;
   }
   .cta-hours-title {
     margin-bottom: 12px !important;
+    font-size: 12px !important;
   }
   .hours-table tr td {
     padding: 6px 0 !important;
     font-size: 13px !important;
+  }
+  .cta-contact-info {
+    margin-top: 16px !important;
+  }
+  .cta-contact-line {
+    font-size: 12px !important;
+    margin-bottom: 4px !important;
   }
 }
 
