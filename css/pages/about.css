@@ -136,3 +136,76 @@
   line-height: 1.5;
   margin: 0;
 }
+
+/* ── Compact Mobile Layout (Phase 6 Stylists & Profile Cards) ── */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 24px 0 18px;
+  }
+  .about-story-grid {
+    gap: 16px;
+  }
+  .about-story-img img {
+    height: 180px;
+    border-radius: var(--radius-lg);
+  }
+  .stats-grid {
+    gap: 8px;
+  }
+  .stat-box {
+    padding: 10px 8px;
+    border-radius: var(--radius-md);
+  }
+  .stat-box__number {
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+  }
+  .stat-box__label {
+    font-size: 0.72rem;
+  }
+
+  /* Compact Horizontal Team Profile Cards */
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .team-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 8px;
+    gap: 12px;
+    border-radius: var(--radius-md);
+  }
+  .team-card img {
+    width: 82px;
+    height: 98px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    object-position: top center;
+    flex-shrink: 0;
+  }
+  .team-card__body {
+    padding: 0 4px 0 0;
+    flex: 1;
+    min-width: 0;
+  }
+  .team-card__name {
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+  }
+  .team-card__role {
+    font-size: 0.72rem;
+    margin-bottom: 3px;
+  }
+  .team-card__bio {
+    font-size: 0.72rem;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

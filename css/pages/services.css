@@ -94,3 +94,16 @@
   margin-bottom: 12px;
   display: block;
 }
+
+/* ── Compact Mobile Layout ── */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 24px 0 18px;
+  }
+  .services-page-layout {
+    gap: 16px;
+  }
+  .sticky-estimator-sidebar {
+    display: none;
+  }
+}

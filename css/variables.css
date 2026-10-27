@@ -119,9 +119,17 @@
   --z-loader:             9999;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   :root {
-    --section-pad-y: 44px;
-    --section-pad-x: 16px;
+    --section-pad-y: clamp(24px, 5vw, 30px);
+    --section-pad-x: 14px;
+    --container-max: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  :root {
+    --section-pad-y: 20px;
+    --section-pad-x: 12px;
   }
 }

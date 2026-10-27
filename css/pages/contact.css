@@ -63,3 +63,42 @@
 .contact-quick-card a:hover {
   color: var(--gold);
 }
+
+/* ── Compact Mobile Layout ── */
+@media (max-width: 768px) {
+  .contact-hero {
+    padding: 24px 0 18px;
+  }
+  .contact-info-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .contact-quick-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px 12px;
+    gap: 12px;
+    border-radius: var(--radius-md);
+    border-top: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+  }
+  .contact-quick-card .material-symbols-outlined {
+    font-size: 24px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+  .contact-quick-card h3 {
+    font-size: 0.88rem;
+    margin-bottom: 2px;
+  }
+  .contact-quick-card p,
+  .contact-quick-card a {
+    font-size: 0.78rem;
+  }
+  .contact-quick-card div[style*="margin-top"] {
+    margin-top: 3px !important;
+  }
+}

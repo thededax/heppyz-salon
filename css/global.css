@@ -242,9 +242,41 @@ h1, h2, h3, h4, h5, h6 {
   top: 16px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hide-mobile { display: none !important; }
+
+  /* Compact typography & spacing scale */
+  .section-header {
+    margin-bottom: 18px;
+  }
+  .section-title {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem);
+    line-height: 1.15;
+    margin-bottom: 6px;
+  }
+  .section-subtitle {
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+  .eyebrow {
+    font-size: 0.72rem;
+    margin-bottom: 6px;
+    gap: 6px;
+    letter-spacing: 0.1em;
+  }
 }
-@media (min-width: 768px) {
+
+@media (max-width: 400px) {
+  .section-header {
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-size: 1.32rem;
+  }
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 769px) {
   .hide-desktop { display: none !important; }
 }
