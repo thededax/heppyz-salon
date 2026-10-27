@@ -2,138 +2,407 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact &amp; Book | HEPPYZ SALON Bhagalpur</title>
-  <meta name="description" content="Book your appointment via WhatsApp. Find us at R B Surya Parshad Lane, Khanjarpur, Bhagalpur.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact &amp; Book Appointment | HEPPYZ SALON Bhagalpur</title>
+  <meta name="description" content="Book your slot at Heppyz Salon Bhagalpur. Walk in or reserve on WhatsApp. Located at R B Surya Parshad Lane, Khanjarpur. Call 929-754-7403.">
   <link rel="canonical" href="https://heppyzsalon.com/contact.html">
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Heppyz Salon">
-  <meta property="og:title" content="Contact &amp; Book | HEPPYZ SALON">
-  <meta property="og:description" content="Book your appointment via WhatsApp. Find us in Bhagalpur.">
+  <meta property="og:title" content="Contact &amp; Book | HEPPYZ SALON Bhagalpur">
+  <meta property="og:description" content="Book via WhatsApp or walk in. Find our location, opening hours, and phone details in Bhagalpur.">
   <meta property="og:url" content="https://heppyzsalon.com/contact.html">
+  <meta property="og:image" content="https://heppyzsalon.com/images/interior/station.png">
   <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/contact.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div class="page-loader" id="pageLoader"><div class="loader-logo"><img src="logo/heppy_salon_white.png" alt="Heppyz" class="loader-logo-img"></div><div class="loader-bar"><div class="loader-bar__fill"></div></div></div>
 
-  <nav class="navbar"><a href="index.html" class="nav-logo-wrap"><img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="nav-logo-desktop"><img src="logo/hh_white.png" alt="Heppyz" class="nav-logo-mobile"></a><div class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></div><a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-primary nav-book-btn" target="_blank" rel="noopener noreferrer">BOOK NOW</a><button class="nav-menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
-  <div class="mobile-menu" role="dialog" aria-label="Navigation menu"><a href="index.html" class="mobile-menu__link">Home</a><a href="services.html" class="mobile-menu__link">Services</a><a href="gallery.html" class="mobile-menu__link">Gallery</a><a href="about.html" class="mobile-menu__link">About</a><a href="contact.html" class="mobile-menu__link">Contact</a></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-logo">
+      <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="loader-logo-img">
+    </div>
+    <div class="loader-bar"><div class="loader-bar__fill"></div></div>
+  </div>
+
+  <!-- TOP STRIP -->
+  <div class="top-strip">
+    <div class="container top-strip__inner">
+      <div class="top-strip__item">
+        <span class="top-strip__badge">✨ Certified 100% Sterilized</span>
+        <span>Walk-ins welcome &amp; zero-wait slot bookings</span>
+      </div>
+      <div class="top-strip__item top-strip__timing">
+        <span class="material-symbols-outlined" style="font-size:16px;">schedule</span>
+        <span>Mon–Sat: <strong>9:15 AM – 9:00 PM</strong> | Sun: <strong>10:00 AM – 7:00 PM</strong></span>
+      </div>
+      <div class="top-strip__item">
+        <a href="tel:9297547403">📞 929-754-7403</a>
+        <span style="opacity:0.4;">|</span>
+        <a href="https://wa.me/919297547403" target="_blank" rel="noopener noreferrer" style="color:var(--gold); font-weight:600;">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="nav-logo-wrap" aria-label="Heppyz Salon Home">
+        <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="nav-logo-desktop">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Rate Card</a>
+        <a href="services.html#combos">Value Combos</a>
+        <a href="gallery.html">Lookbook</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="services.html#book-slot" class="nav-cart-pill" aria-label="View selected services">
+          <span class="material-symbols-outlined" style="font-size:18px; color:var(--accent-coral);">shopping_bag</span>
+          <span>Services</span>
+          <span class="nav-cart-pill__count">0</span>
+        </a>
+        <a href="#book-slot" class="btn btn-primary btn-sm hide-mobile">BOOK SLOT</a>
+        <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="dialog" aria-label="Navigation Menu">
+    <a href="index.html" class="mobile-menu__link">Home <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="services.html" class="mobile-menu__link">Rate Card &amp; Services <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="services.html#combos" class="mobile-menu__link">Value Combos <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="gallery.html" class="mobile-menu__link">Client Lookbook <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="about.html" class="mobile-menu__link">About Our Salon <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="contact.html" class="mobile-menu__link active">Contact &amp; Location <span class="material-symbols-outlined">arrow_forward</span></a>
+    <div style="margin-top:auto; padding-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <a href="#book-slot" class="btn btn-primary btn-block">BOOK APPOINTMENT NOW</a>
+    </div>
+  </div>
 
   <main id="main-content">
 
-  <section class="contact-hero">
-    <div>
-      <span class="eyebrow">Get In Touch</span>
-      <h1 class="section-title" style="margin-bottom:16px;">LET'S GET YOU <em>BOOKED</em></h1>
-      <p class="section-subtitle mx-auto" style="text-align:center;">Walk in or WhatsApp — we're always ready for you.</p>
-    </div>
-  </section>
+    <!-- PAGE HERO -->
+    <section class="contact-hero">
+      <div class="container">
+        <span class="eyebrow eyebrow--gold">Reach Out &amp; Book</span>
+        <h1 class="page-hero-title">
+          Let's Get Your <em>Chair Reserved</em>
+        </h1>
+        <p class="page-hero-desc">
+          Walk in whenever you like, or lock a priority zero-wait slot online or via WhatsApp. We confirm appointments within 10 minutes.
+        </p>
+      </div>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="contact-layout">
-        <div>
-          <div class="contact-info-card" data-reveal>
-            <span class="material-symbols-outlined contact-info-card__icon">location_on</span>
-            <div class="contact-info-card__label">FIND US</div>
-            <address class="contact-info-card__value">R B Surya Parshad Lane,<br>Khanjarpur, Bhagalpur,<br>Bihar, India</address>
-            <div class="contact-buttons">
-              <a href="https://www.google.com/maps/place/Heppyz+Salon/@25.2587535,86.9898256,17z/data=!3m1!4b1!4m6!3m5!1s0x39f0373134cb7d3f:0xa2f8308fb6f463bb!8m2!3d25.2587487!4d86.9924005!16s%2Fg%2F11xvxskjmg" class="btn-ghost" target="_blank" rel="noopener noreferrer" style="font-size:11px; padding:10px 20px;">GET DIRECTIONS →</a>
+    <!-- QUICK CONTACT CARDS -->
+    <section class="section section--sand" style="padding-bottom:0;">
+      <div class="container">
+        <div class="contact-info-cards-grid">
+          <div class="contact-quick-card">
+            <span class="material-symbols-outlined">location_on</span>
+            <h3>Our Location</h3>
+            <p>R B Surya Parshad Lane, Khanjarpur, Bhagalpur, Bihar</p>
+            <div style="margin-top:12px;">
+              <a href="https://www.google.com/maps/place/Heppyz+Salon/@25.2587535,86.9898256,17z/data=!3m1!4b1!4m6!3m5!1s0x39f0373134cb7d3f:0xa2f8308fb6f463bb!8m2!3d25.2587487!4d86.9924005!16s%2Fg%2F11xvxskjmg" target="_blank" rel="noopener noreferrer" style="color:var(--accent-coral); font-weight:700; font-size:0.85rem;">
+                Get Directions on Maps →
+              </a>
             </div>
           </div>
-          <div class="contact-info-card" data-reveal>
-            <span class="material-symbols-outlined contact-info-card__icon">call</span>
-            <div class="contact-info-card__label">CALL OR WHATSAPP</div>
-            <a href="tel:9297547403" class="contact-phone-large">929-754-7403</a>
-            <div class="contact-buttons">
-              <a href="tel:9297547403" class="btn-primary" style="font-size:11px; padding:10px 20px;">CALL NOW</a>
-              <a href="https://wa.me/919297547403" class="btn-ghost" target="_blank" rel="noopener noreferrer" style="font-size:11px; padding:10px 20px;">CHAT ON WHATSAPP</a>
+
+          <div class="contact-quick-card">
+            <span class="material-symbols-outlined">call</span>
+            <h3>Call or WhatsApp</h3>
+            <p><a href="tel:9297547403" style="font-family:var(--font-mono); font-size:1.1rem; font-weight:700; color:var(--text-primary);">929-754-7403</a></p>
+            <div style="margin-top:12px;">
+              <a href="https://wa.me/919297547403" target="_blank" rel="noopener noreferrer" style="color:var(--whatsapp); font-weight:700; font-size:0.85rem;">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp →
+              </a>
             </div>
           </div>
-          <div class="contact-info-card" data-reveal>
-            <span class="material-symbols-outlined contact-info-card__icon">schedule</span>
-            <div class="contact-info-card__label">OPENING HOURS</div>
-            <ul class="hours-list">
-              <li><span>Monday – Saturday</span><span>9:15 AM – 9:00 PM</span></li>
-              <li><span>Sunday</span><span>10:00 AM – 7:00 PM</span></li>
-            </ul>
-            <p style="font-size:13px; color:var(--text-muted); margin-top:12px;">Walk-ins welcome during all hours</p>
+
+          <div class="contact-quick-card">
+            <span class="material-symbols-outlined">schedule</span>
+            <h3>Working Hours</h3>
+            <p>Mon–Sat: 9:15 AM – 9:00 PM</p>
+            <p>Sunday: 10:00 AM – 7:00 PM</p>
+            <p style="font-size:0.75rem; color:var(--accent-sage); font-weight:600; margin-top:4px;">Walk-ins welcome all day</p>
           </div>
-          <div class="contact-info-card" data-reveal>
-            <div class="contact-info-card__label">FOLLOW OUR WORK</div>
-            <div class="footer-social">
-              <a href="https://www.instagram.com/heppyzsalon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="booking-widget" data-reveal id="whatsapp-booking-form">
-          <h3>BOOK YOUR APPOINTMENT</h3>
-          <p class="booking-widget__subtitle">Select a service below and tap the button — we'll confirm your slot on WhatsApp.</p>
-          <div class="form-group">
-            <label for="service">Choose Service</label>
-            <select id="service" name="service" required>
-              <option value="">— Select a service —</option>
-              <optgroup label="Hair Care">
-                <option value="Hair Cut">Hair Cut — ₹299</option>
-                <option value="Hair Color">Hair Color — ₹799</option>
-                <option value="Hair Spa">Hair Spa — ₹399</option>
-                <option value="Beard Styling">Beard Styling — ₹149</option>
-              </optgroup>
-              <optgroup label="Skin Care">
-                <option value="Facial">Facial — ₹599</option>
-                <option value="Cleanup">Cleanup — ₹249</option>
-                <option value="De-Tan">De-Tan — ₹349</option>
-                <option value="Anti-Acne">Anti-Acne — ₹449</option>
-              </optgroup>
-              <optgroup label="Makeup">
-                <option value="Party Makeup">Party Makeup — ₹699</option>
-                <option value="Bridal Makeup">Bridal Makeup — ₹2499</option>
-                <option value="Editorial Makeup">Editorial Makeup — ₹999</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="datetime">Preferred Date &amp; Time</label>
-            <input type="text" id="datetime" name="datetime" placeholder="e.g., Tomorrow 3 PM" required>
-          </div>
-          <button class="btn-primary" id="book-submit" style="width:100%; justify-content:center; font-size:15px; padding:16px;">
-            <i class="fa-brands fa-whatsapp"></i> BOOK VIA WHATSAPP
-          </button>
-          <p class="response-note">⚡ Average response time: Under 10 minutes</p>
-          <p class="response-note">No payment needed to book — just show up!</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="contact-map-wrap" data-reveal>
-    <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5!2d86.9898256!3d25.2587535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0373134cb7d3f%3A0xa2f8308fb6f463bb!2sHeppyz%20Salon!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Heppyz Salon Location" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+    <!-- APPOINTMENT BOOKING & INSTANT WHATSAPP HUB (#book-slot) -->
+    <section class="section section--sand" id="book-slot">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">
+            <span class="material-symbols-outlined" style="font-size:16px;">event_available</span>
+            Fast Confirmation
+          </span>
+          <h2 class="section-title">
+            Book Online or on <em>WhatsApp</em>
+          </h2>
+          <p class="section-subtitle">
+            Fill in your preferred details below. No advance payment is needed to hold your slot.
+          </p>
+        </div>
+
+        <div class="booking-hub" id="whatsapp-booking-form">
+          <div class="booking-hub-grid">
+            <!-- Left Form Column -->
+            <div class="booking-hub-form-col">
+              <!-- Live Selected Services Box -->
+              <div class="selected-services-box">
+                <div class="selected-services-header">
+                  <span class="selected-services-title">
+                    <span class="material-symbols-outlined" style="font-size:20px; color:var(--accent-coral);">check_circle</span>
+                    Your Selected Services
+                  </span>
+                  <button type="button" class="selected-services-clear-btn" onclick="window.heppyzClearServices()">Clear All</button>
+                </div>
+                <div class="selected-services-list"></div>
+                <div class="selected-services-empty" style="padding:10px 0; color:var(--text-muted); font-size:0.88rem;">
+                  No specific services pre-selected. You can select one from the dropdown below or <a href="services.html" style="color:var(--accent-coral); font-weight:600;">explore the Rate Card</a>.
+                </div>
+                <div class="selected-services-totals">
+                  <div>
+                    <span style="font-size:0.8rem; color:var(--text-muted); display:block;">Est. Duration:</span>
+                    <strong class="totals-duration">0 Mins</strong>
+                  </div>
+                  <div style="text-align:right;">
+                    <span style="font-size:0.8rem; color:var(--text-muted); display:block;">Est. Total Price:</span>
+                    <strong class="totals-amount">₹0</strong>
+                  </div>
+                </div>
+              </div>
+
+              <form id="appointment-booking-form">
+                <div class="form-group">
+                  <label for="service" class="form-label">Single Service Selector (If not using Rate Card)</label>
+                  <select id="service" name="service" class="form-input">
+                    <option value="">— Choose a treatment (or leave blank if selected above) —</option>
+                    <optgroup label="Hair Care">
+                      <option value="Hair Cut — ₹299">Precision Hair Cut — ₹299 (35m)</option>
+                      <option value="Hair Color — ₹799">Global Hair Color — ₹799+ (90m)</option>
+                      <option value="Hair Spa — ₹399">Deep Nourish Hair Spa — ₹399 (60m)</option>
+                      <option value="Keratin Treatment — ₹599">Keratin Treatment — ₹599 (60m)</option>
+                      <option value="Beard Styling — ₹149">Beard Styling &amp; Shave — ₹149 (20m)</option>
+                      <option value="Head Massage — ₹199">Herbal Oil Head Massage — ₹199 (30m)</option>
+                    </optgroup>
+                    <optgroup label="Skin Care &amp; Facials">
+                      <option value="Facial — ₹599">Signature Glow Facial — ₹599+ (60m)</option>
+                      <option value="Cleanup — ₹249">Express Refresh Cleanup — ₹249 (30m)</option>
+                      <option value="De-Tan — ₹349">Active Radiance De-Tan — ₹349 (30m)</option>
+                      <option value="Anti-Acne — ₹449">Anti-Acne Facial — ₹449 (45m)</option>
+                      <option value="Detox Cleanup — ₹499">Detox Pore Cleanup — ₹499 (45m)</option>
+                    </optgroup>
+                    <optgroup label="Makeup &amp; Bridal">
+                      <option value="Party Makeup — ₹699">Glamour Party Makeup — ₹699 (60m)</option>
+                      <option value="Bridal Makeup — ₹2499">Royal Bridal Makeover — ₹2499 (3.5h)</option>
+                      <option value="Engagement Look — ₹1499">Engagement Look — ₹1499 (2h)</option>
+                    </optgroup>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Full Name *</label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone / WhatsApp Number (Optional)</label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your 10-digit mobile number">
+                </div>
+
+                <div class="form-group">
+                  <label for="date" class="form-label">Preferred Date *</label>
+                  <input type="date" id="date" name="date" class="form-input" value="2026-10-26">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Preferred Time Slot *</label>
+                  <input type="hidden" id="selected-time-slot" value="Morning (10:00 AM – 1:00 PM)">
+                  <div class="time-slot-pills">
+                    <div class="time-slot-pill active" data-slot="Morning (10:00 AM – 1:00 PM)">
+                      <span class="time-slot-pill__name">Morning</span>
+                      <span class="time-slot-pill__hours">10 AM – 1 PM</span>
+                    </div>
+                    <div class="time-slot-pill" data-slot="Afternoon (1:00 PM – 5:00 PM)">
+                      <span class="time-slot-pill__name">Afternoon</span>
+                      <span class="time-slot-pill__hours">1 PM – 5 PM</span>
+                    </div>
+                    <div class="time-slot-pill" data-slot="Evening (5:00 PM – 9:00 PM)">
+                      <span class="time-slot-pill__name">Evening</span>
+                      <span class="time-slot-pill__hours">5 PM – 9 PM</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="stylist" class="form-label">Preferred Stylist</label>
+                  <select id="stylist" name="stylist" class="form-input">
+                    <option value="Any Available Expert">Any Available Expert Stylist</option>
+                    <option value="Rajesh (Master Stylist)">Rajesh (Master Stylist &amp; Fades)</option>
+                    <option value="Vikram (Senior Barber &amp; Skin)">Vikram (Senior Barber &amp; Skin)</option>
+                    <option value="Priya (Makeup &amp; Color Artist)">Priya (Makeup &amp; Color Artist)</option>
+                  </select>
+                </div>
+
+                <div class="booking-actions-row">
+                  <button type="button" class="btn btn-whatsapp btn-lg btn-block" id="book-whatsapp-submit">
+                    <i class="fa-brands fa-whatsapp"></i> Confirm via WhatsApp Now →
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-block" id="book-online-submit">
+                    Reserve Slot Online Without WhatsApp
+                  </button>
+                </div>
+
+                <p style="text-align:center; font-size:0.8rem; color:var(--text-muted); margin-top:16px;">
+                  ⚡ Average confirmation time: Under 10 minutes • No advance deposit required
+                </p>
+              </form>
+            </div>
+
+            <!-- Right Info & Map Column -->
+            <div class="booking-hub-info-col">
+              <div class="salon-info-card">
+                <h3 class="salon-info-title">Heppyz Salon Bhagalpur</h3>
+                <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:16px;">
+                  R B Surya Parshad Lane, Khanjarpur,<br>
+                  Bhagalpur, Bihar, India
+                </p>
+                <h4 style="font-size:0.85rem; font-family:var(--font-display); text-transform:uppercase; letter-spacing:0.08em; color:var(--text-primary); margin-bottom:10px;">
+                  Salon Timings
+                </h4>
+                <table class="hours-table">
+                  <tr><td>Monday – Saturday</td><td>9:15 AM – 9:00 PM</td></tr>
+                  <tr><td>Sunday</td><td>10:00 AM – 7:00 PM</td></tr>
+                </table>
+                <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:20px;">
+                  <a href="tel:9297547403" class="btn btn-secondary btn-sm" style="justify-content:flex-start;">
+                    <span class="material-symbols-outlined">call</span> Call: 929-754-7403
+                  </a>
+                  <a href="https://www.google.com/maps/place/Heppyz+Salon/@25.2587535,86.9898256,17z/data=!3m1!4b1!4m6!3m5!1s0x39f0373134cb7d3f:0xa2f8308fb6f463bb!8m2!3d25.2587487!4d86.9924005!16s%2Fg%2F11xvxskjmg" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer" style="justify-content:flex-start;">
+                    <span class="material-symbols-outlined">directions</span> Open in Google Maps →
+                  </a>
+                </div>
+              </div>
+
+              <div class="map-embed-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5!2d86.9898256!3d25.2587535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0373134cb7d3f%3A0xa2f8308fb6f463bb!2sHeppyz%20Salon!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="Heppyz Salon Map Location" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer class="footer"><div class="footer-grid"><div class="footer-col"><img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="footer-logo"><p class="footer-brand-desc">Bhagalpur's go-to salon for hair, skin, and style. Men and women — everyone's welcome.</p><div class="footer-social"><a href="https://www.instagram.com/heppyzsalon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919297547403" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></div></div><div class="footer-col"><h4>Quick Links</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-col"><h4>Services</h4><a href="services.html">Hair Care</a><a href="services.html">Skin Care</a><a href="services.html">Makeup</a><a href="services.html">Bridal</a></div><div class="footer-col"><h4>Contact</h4><p>📍 R B Surya Parshad Lane, Khanjarpur, Bhagalpur</p><p>📞 <a href="tel:9297547403">929-754-7403</a></p><p>💬 <a href="https://wa.me/919297547403" target="_blank" rel="noopener noreferrer">WhatsApp</a></p></div></div><div class="footer-bottom"><p>© 2025 HEPPYZ SALON · BHAGALPUR</p><p>CRAFTED WITH CARE</p></div></footer>
+  <!-- FLOATING SUMMARY BAR -->
+  <div class="floating-summary-bar" id="floating-summary" role="region" aria-label="Appointment Estimator">
+    <div class="floating-summary-inner">
+      <div class="floating-summary-info">
+        <span class="floating-summary-count">0 Services Selected</span>
+        <span class="floating-summary-duration">~0 Mins</span>
+        <span class="floating-summary-total">₹0</span>
+      </div>
+      <a href="#book-slot" class="floating-summary-cta">
+        Confirm Slot <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+      </a>
+    </div>
+  </div>
 
-  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>Message Us</span></a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="footer-logo">
+          <p class="footer-desc">
+            Bhagalpur's go-to neighborhood unisex salon for hair, beard, skincare, and bridal styling. Transparent pricing, sterilized tools, and genuine warmth.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/heppyzsalon" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919297547403" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Rate Card</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="about.html">About &amp; Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html">Precision Haircut (₹299)</a></li>
+            <li><a href="services.html">Beard Craft &amp; Shave (₹149)</a></li>
+            <li><a href="services.html">Active Radiance De-Tan (₹349)</a></li>
+            <li><a href="services.html">Deep Nourish Hair Spa (₹399)</a></li>
+            <li><a href="services.html">Signature Glow Facial (₹599)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Reach Us</h4>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">location_on</span>
+            <span>R B Surya Parshad Lane, Khanjarpur, Bhagalpur</span>
+          </div>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">call</span>
+            <a href="tel:9297547403">929-754-7403</a>
+          </div>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">schedule</span>
+            <span>Mon–Sat: 9:15 AM–9:00 PM<br>Sun: 10:00 AM–7:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HEPPYZ SALON · BHAGALPUR. ALL RIGHTS RESERVED.</p>
+        <p>TRANSPARENT PRICING · CERTIFIED HYGIENE</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Book on WhatsApp" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp Us</span>
+  </a>
+
   <script src="js/main.js" defer></script>
   <script src="js/animations.js" defer></script>
   <script src="js/whatsapp.js" defer></script>

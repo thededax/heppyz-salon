@@ -1,302 +1,138 @@
-/* ═══ ABOUT PAGE — Stitch Industrial Grid ═══ */
+/* ═══════════════════════════════════════════════════════
+   HEPPYZ SALON — About Page Styles (Original Brand Palette)
+   Deep Industrial Dark (#09151c) · Gold Accent (#f3bf51)
+   ═══════════════════════════════════════════════════════ */
 
-/* ── About Hero — Full-bleed image ── */
 .about-hero {
-  position: relative; min-height: 90vh;
-  display: flex; align-items: center;
-  overflow: hidden;
-}
-.about-hero__bg {
-  position: absolute; inset: 0; z-index: 0;
-}
-.about-hero__bg img {
-  width: 100%; height: 100%; object-fit: cover;
-  opacity: 0.4; filter: saturate(0.6);
-}
-.about-hero__bg::after {
-  content: ''; position: absolute; inset: 0;
-  background: linear-gradient(90deg, rgba(var(--bg-rgb), 0.95) 0%, rgba(var(--bg-rgb), 0.5) 50%, transparent 100%);
-}
-.about-hero__inner {
-  position: relative; z-index: 2;
-  max-width: var(--container-max); width: 100%;
-  margin: 0 auto; padding: 120px var(--section-pad-x) 80px;
-}
-.about-hero__inner h1 {
-  font-family: var(--font-headline); font-weight: 900;
-  font-size: clamp(48px, 8vw, 112px);
-  text-transform: uppercase; letter-spacing: -0.03em;
-  line-height: 0.9; color: var(--text-bright);
-  margin-bottom: 32px;
-}
-.about-hero__inner h1 span { color: var(--gold); }
-.about-hero__desc {
-  font-size: 18px; color: var(--text-secondary); font-weight: 300;
-  line-height: 1.8; max-width: 560px;
-  border-left: 2px solid var(--gold-dim);
-  padding-left: 32px;
+  position: relative;
+  padding: clamp(60px, 8vw, 100px) 0 clamp(40px, 5vw, 60px);
+  background: var(--surface-low);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
 }
 
-/* ── Philosophy Section — Industrial Grid ── */
-.philosophy-grid {
-  display: grid; grid-template-columns: 1fr;
-  gap: 48px;
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
 }
-@media (min-width: 768px) {
-  .philosophy-grid {
-    grid-template-columns: 5fr 7fr;
-    gap: 64px;
+
+@media (min-width: 900px) {
+  .about-story-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 }
-.philosophy-text h2 {
-  font-family: var(--font-headline); font-weight: 800;
-  font-size: clamp(32px, 5vw, 48px);
-  text-transform: uppercase; letter-spacing: 0.08em;
-  color: var(--text-bright); margin-bottom: 48px;
-}
-.philosophy-item { margin-bottom: 40px; }
-.philosophy-item h3 {
-  font-family: var(--font-headline); font-weight: 700;
-  font-size: 20px; color: var(--gold);
-  text-transform: uppercase; letter-spacing: 0.1em;
-  margin-bottom: 12px;
-}
-.philosophy-item p {
-  color: var(--text-secondary); font-weight: 300;
-  line-height: 1.7; font-size: 15px;
-}
-.philosophy-image {
+
+.about-story-img {
   position: relative;
-}
-.philosophy-image__wrap {
-  position: relative; z-index: 2;
-  border-top: 2px solid var(--gold-dim);
-  border-left: 2px solid var(--gold-dim);
-  padding: 6px;
-}
-.philosophy-image__wrap img {
-  width: 100%; height: 500px; object-fit: cover;
-  filter: grayscale(100%) brightness(0.75);
-  transition: filter 0.7s ease;
-}
-.philosophy-image__wrap:hover img {
-  filter: grayscale(0%) brightness(1);
-}
-.philosophy-image__ghost {
-  position: absolute; bottom: -32px; left: -32px;
-  width: 200px; height: 200px; z-index: 0;
-  background: var(--surface-highest);
-  display: flex; align-items: center; justify-content: center;
-}
-.philosophy-image__ghost span {
-  font-family: var(--font-headline); font-weight: 800;
-  font-size: 72px; color: rgba(var(--gold-rgb), 0.15);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border);
 }
 
-/* ── Values Grid ── */
-.values-grid {
-  display: grid; grid-template-columns: 1fr;
-  gap: 24px;
+.about-story-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
 }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 @media (min-width: 768px) {
-  .values-grid { grid-template-columns: repeat(3, 1fr); }
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
-.value-card {
-  background: var(--surface-high);
-  padding: 40px 32px;
+
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-top: 3px solid var(--gold);
-  transition: transform var(--dur-mid);
-}
-.value-card:hover { transform: translateY(-6px); }
-.value-card__number {
-  font-family: var(--font-headline); font-weight: 800;
-  font-size: 48px; color: rgba(var(--gold-rgb), 0.2);
-  margin-bottom: 16px; line-height: 1;
-}
-.value-card__title {
-  font-family: var(--font-headline); font-weight: 700;
-  font-size: 22px; color: var(--text-bright);
-  text-transform: uppercase; letter-spacing: 0.1em;
-  margin-bottom: 16px;
-}
-.value-card__desc {
-  color: var(--text-secondary); font-weight: 300;
-  line-height: 1.7; font-size: 14px;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  box-shadow: var(--shadow-subtle);
 }
 
-/* ── Team Grid — Staggered ── */
-.team-grid {
-  display: grid; grid-template-columns: 1fr;
-  gap: 32px;
-}
-@media (min-width: 768px) {
-  .team-grid { grid-template-columns: repeat(3, 1fr); }
-  .team-grid > :nth-child(2) { margin-top: 64px; }
-}
-.team-card { }
-.team-card__image-wrap {
-  aspect-ratio: 3/4; overflow: hidden;
-  margin-bottom: 20px; position: relative;
-}
-.team-card__image-wrap img {
-  width: 100%; height: 100%; object-fit: cover;
-  filter: grayscale(100%);
-  transition: filter 0.7s ease;
-}
-.team-card:hover .team-card__image-wrap img {
-  filter: grayscale(0%);
-}
-.team-card__image-wrap::after {
-  content: ''; position: absolute; inset: 0;
-  background: rgba(var(--gold-rgb), 0.15);
-  opacity: 0; transition: opacity 0.5s;
-}
-.team-card:hover .team-card__image-wrap::after { opacity: 1; }
-.team-card__name {
-  font-family: var(--font-headline); font-weight: 700;
-  font-size: 22px; text-transform: uppercase;
-  letter-spacing: 0.12em; color: var(--text-bright);
+.stat-box__number {
+  font-family: var(--font-mono);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--gold);
   margin-bottom: 4px;
 }
-.team-card__role {
-  font-family: var(--font-label); font-weight: 200;
-  font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--gold);
+
+.stat-box__label {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
-/* ── Features Section ── */
-.about-features-grid {
-  display: grid; grid-template-columns: 1fr;
-  gap: 48px;
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
-@media (min-width: 768px) {
-  .about-features-grid { grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+
+@media (min-width: 640px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-.about-feature-img {
-  width: 100%; aspect-ratio: 1; object-fit: cover;
-  box-shadow: 0 40px 80px -20px rgba(0,0,0,0.4);
+
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  transition: transform var(--dur-fast), border-color var(--dur-fast);
 }
-.about-feature-item {
-  display: flex; gap: 20px; align-items: flex-start;
-  margin-bottom: 32px;
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
 }
-.about-feature-item .material-symbols-outlined {
-  font-size: 28px; color: var(--gold); flex-shrink: 0;
-  margin-top: 2px;
+
+.team-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
-.about-feature-item h4 {
-  font-family: var(--font-headline); font-weight: 700;
-  font-size: 16px; text-transform: uppercase;
-  letter-spacing: 0.1em; color: var(--text-bright);
+
+.team-card__body {
+  padding: 20px;
+}
+
+.team-card__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}
+
+.team-card__role {
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gold);
   margin-bottom: 8px;
 }
-.about-feature-item p {
-  color: var(--text-secondary); font-weight: 300;
-  font-size: 14px; line-height: 1.7;
-}
 
-/* ── Stats Bar ── */
-.stats-bar {
-  display: grid; grid-template-columns: repeat(2, 1fr);
-  gap: 24px; text-align: center;
+.team-card__bio {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
 }
-@media (min-width: 768px) {
-  .stats-bar { grid-template-columns: repeat(4, 1fr); }
-}
-.stat-item__number {
-  font-family: var(--font-headline); font-weight: 800;
-  font-size: clamp(36px, 6vw, 56px);
-  color: var(--gold); line-height: 1;
-}
-.stat-item__label {
-  font-family: var(--font-label); font-weight: 200;
-  font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase;
-  color: var(--text-muted); margin-top: 8px;
-}
-
-/* ── About Page Mobile Compressions ── */
-@media (max-width: 767px) {
-  .about-hero {
-    min-height: 40vh !important;
-  }
-  .about-hero__inner {
-    padding: 80px var(--section-pad-x) 20px !important;
-  }
-  .about-hero__desc {
-    font-size: 13px !important;
-    padding-left: 16px !important;
-  }
-  
-  .philosophy-grid {
-    gap: 24px !important;
-  }
-  .philosophy-text h2 {
-    margin-bottom: 20px !important;
-  }
-  .philosophy-item {
-    margin-bottom: 20px !important;
-  }
-  .philosophy-item h3 {
-    font-size: 16px !important;
-  }
-  .philosophy-item p {
-    font-size: 13px !important;
-  }
-  .philosophy-image__wrap img {
-    height: 220px !important;
-  }
-  .philosophy-image__ghost {
-    display: none !important;
-  }
-  
-  .values-grid {
-    gap: 16px !important;
-  }
-  .value-card {
-    padding: 20px 16px !important;
-  }
-  .value-card__number {
-    font-size: 32px !important;
-    margin-bottom: 8px !important;
-  }
-  .value-card__title {
-    font-size: 16px !important;
-    margin-bottom: 8px !important;
-  }
-  .value-card__desc {
-    font-size: 12px !important;
-  }
-  
-  .team-grid {
-    gap: 20px !important;
-  }
-  .team-card__name {
-    font-size: 16px !important;
-  }
-  
-  .about-features-grid {
-    gap: 24px !important;
-  }
-  .about-feature-item {
-    margin-bottom: 16px !important;
-    gap: 12px !important;
-  }
-  .about-feature-item .material-symbols-outlined {
-    font-size: 20px !important;
-  }
-  .about-feature-item h4 {
-    font-size: 14px !important;
-  }
-  .about-feature-item p {
-    font-size: 12px !important;
-  }
-  
-  .stats-bar {
-    gap: 16px !important;
-  }
-  .stat-item__label {
-    font-size: 9px !important;
-    letter-spacing: 0.15em !important;
-  }
-}
-

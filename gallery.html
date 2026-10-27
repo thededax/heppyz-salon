@@ -2,149 +2,301 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | HEPPYZ SALON Bhagalpur</title>
-  <meta name="description" content="See our best work — haircuts, colors, facials, bridal looks. Real clients, real results at Heppyz Salon.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Client Lookbook &amp; Style Gallery | HEPPYZ SALON Bhagalpur</title>
+  <meta name="description" content="Explore real style transformations from Heppyz Salon Bhagalpur. Sharp haircuts, balayage hair color, beard crafts, facials &amp; royal bridal makeovers.">
   <link rel="canonical" href="https://heppyzsalon.com/gallery.html">
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Heppyz Salon">
-  <meta property="og:title" content="Gallery | HEPPYZ SALON">
-  <meta property="og:description" content="Real transformations. Real clients. See the work at Heppyz Salon.">
+  <meta property="og:title" content="Client Lookbook &amp; Style Gallery | HEPPYZ SALON">
+  <meta property="og:description" content="Real transformations, real clients. Browse haircuts, beard styles, skin glow facials, and bridal looks.">
   <meta property="og:url" content="https://heppyzsalon.com/gallery.html">
+  <meta property="og:image" content="https://heppyzsalon.com/images/gallery/hair-cut.png">
   <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google Fonts: Outfit, Plus Jakarta Sans, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500&family=Raleway:wght@200;300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages/gallery.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <div class="page-loader" id="pageLoader"><div class="loader-logo"><img src="logo/heppy_salon_white.png" alt="Heppyz" class="loader-logo-img"></div><div class="loader-bar"><div class="loader-bar__fill"></div></div></div>
 
-  <nav class="navbar"><a href="index.html" class="nav-logo-wrap"><img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="nav-logo-desktop"><img src="logo/hh_white.png" alt="Heppyz" class="nav-logo-mobile"></a><div class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html" class="active">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><a href="https://wa.me/919297547403?text=Hi%20Heppyz%2C%20I%20want%20to%20book%20an%20appointment." class="btn-primary nav-book-btn" target="_blank" rel="noopener noreferrer">BOOK NOW</a><button class="nav-menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></nav>
-  <div class="mobile-menu" role="dialog" aria-label="Navigation menu"><a href="index.html" class="mobile-menu__link">Home</a><a href="services.html" class="mobile-menu__link">Services</a><a href="gallery.html" class="mobile-menu__link">Gallery</a><a href="about.html" class="mobile-menu__link">About</a><a href="contact.html" class="mobile-menu__link">Contact</a></div>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-logo">
+      <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="loader-logo-img">
+    </div>
+    <div class="loader-bar"><div class="loader-bar__fill"></div></div>
+  </div>
+
+  <!-- TOP STRIP -->
+  <div class="top-strip">
+    <div class="container top-strip__inner">
+      <div class="top-strip__item">
+        <span class="top-strip__badge">✨ Certified 100% Sterilized</span>
+        <span>Walk-ins welcome &amp; zero-wait slot bookings</span>
+      </div>
+      <div class="top-strip__item top-strip__timing">
+        <span class="material-symbols-outlined" style="font-size:16px;">schedule</span>
+        <span>Mon–Sat: <strong>9:15 AM – 9:00 PM</strong> | Sun: <strong>10:00 AM – 7:00 PM</strong></span>
+      </div>
+      <div class="top-strip__item">
+        <a href="tel:9297547403">📞 929-754-7403</a>
+        <span style="opacity:0.4;">|</span>
+        <a href="https://wa.me/919297547403" target="_blank" rel="noopener noreferrer" style="color:var(--gold); font-weight:600;">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="nav-logo-wrap" aria-label="Heppyz Salon Home">
+        <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="nav-logo-desktop">
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Rate Card</a>
+        <a href="services.html#combos">Value Combos</a>
+        <a href="gallery.html" class="active">Lookbook</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="services.html#book-slot" class="nav-cart-pill" aria-label="View selected services">
+          <span class="material-symbols-outlined" style="font-size:18px; color:var(--accent-coral);">shopping_bag</span>
+          <span>Services</span>
+          <span class="nav-cart-pill__count">0</span>
+        </a>
+        <a href="contact.html" class="btn btn-primary btn-sm hide-mobile">BOOK SLOT</a>
+        <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" role="dialog" aria-label="Navigation Menu">
+    <a href="index.html" class="mobile-menu__link">Home <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="services.html" class="mobile-menu__link">Rate Card &amp; Services <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="services.html#combos" class="mobile-menu__link">Value Combos <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="gallery.html" class="mobile-menu__link active">Client Lookbook <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="about.html" class="mobile-menu__link">About Our Salon <span class="material-symbols-outlined">arrow_forward</span></a>
+    <a href="contact.html" class="mobile-menu__link">Contact &amp; Location <span class="material-symbols-outlined">arrow_forward</span></a>
+    <div style="margin-top:auto; padding-top:20px; display:flex; flex-direction:column; gap:12px;">
+      <a href="contact.html" class="btn btn-primary btn-block">BOOK APPOINTMENT NOW</a>
+    </div>
+  </div>
 
   <main id="main-content">
 
-  <!-- HERO HEADER -->
-  <section class="gallery-hero">
-    <div class="gallery-hero__inner">
-      <div class="gallery-hero__row">
-        <div>
-          <span class="eyebrow" style="color: var(--gold);">Our Work</span>
-          <h1>THE<br>GALLERY</h1>
-          <p class="gallery-hero__italic">Real results, real clients</p>
-        </div>
-        <p class="gallery-hero__desc">
-          Every cut, colour, and look captured at Heppyz Salon. Browse by category or explore our mosaic.
+    <!-- PAGE HERO -->
+    <section class="gallery-hero">
+      <div class="container">
+        <span class="eyebrow eyebrow--gold">Client Transformations</span>
+        <h1 class="page-hero-title">
+          The Heppyz <em>Style Lookbook</em>
+        </h1>
+        <p class="page-hero-desc">
+          Real results on real clients. Explore haircuts, beard crafts, color tones, glowing facials, and complete royal bridal makeovers.
         </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FILTER TABS -->
-  <div class="gallery-filters" data-reveal>
-    <button class="gallery-filter-btn active" data-filter="all">All</button>
-    <button class="gallery-filter-btn" data-filter="hair">Hair</button>
-    <button class="gallery-filter-btn" data-filter="skin">Skin</button>
-    <button class="gallery-filter-btn" data-filter="makeup">Makeup</button>
-    <button class="gallery-filter-btn" data-filter="bridal">Bridal</button>
-  </div>
+    <!-- GALLERY GRID WITH FILTER TABS -->
+    <section class="section section--sand gallery-grid-section">
+      <div class="container">
+        <div class="gallery-filters" role="tablist" aria-label="Gallery filters">
+          <button class="gallery-filter-btn active" data-filter="all">All Styles</button>
+          <button class="gallery-filter-btn" data-filter="hair">Haircuts &amp; Fades</button>
+          <button class="gallery-filter-btn" data-filter="color">Hair Color &amp; Spa</button>
+          <button class="gallery-filter-btn" data-filter="beard">Beard Craft</button>
+          <button class="gallery-filter-btn" data-filter="skin">Skin &amp; Facials</button>
+          <button class="gallery-filter-btn" data-filter="bridal">Bridal &amp; Makeup</button>
+          <button class="gallery-filter-btn" data-filter="space">Salon Interior</button>
+        </div>
 
-  <!-- MOSAIC GRID -->
-  <div class="mosaic-grid">
+        <div class="gallery-mosaic-grid">
+          <!-- Plate 01: Haircut -->
+          <div class="gallery-card" data-category="hair">
+            <img src="images/gallery/hair-cut.png" alt="Precision haircut and drop fade" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Precision Drop Fade</h3>
+              <span class="gallery-card-tag">Haircut &amp; Styling • Men</span>
+            </div>
+          </div>
 
-    <!-- PLATE 001 — Large Focus -->
-    <div class="mosaic-cell mosaic-span-2x2 gallery-item" data-category="hair" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/hair-cut.png" alt="Sharp haircut with precision fade" width="800" height="600" loading="eager">
+          <!-- Plate 02: Hair Color -->
+          <div class="gallery-card" data-category="color">
+            <img src="images/gallery/hair-color.png" alt="Vibrant hair color balayage" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Vibrant Balayage &amp; Tint</h3>
+              <span class="gallery-card-tag">Hair Color • Unisex</span>
+            </div>
+          </div>
+
+          <!-- Plate 03: Beard Craft -->
+          <div class="gallery-card" data-category="beard">
+            <img src="images/gallery/beard.png" alt="Clean beard contour and shape" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Straight-Razor Beard Edge</h3>
+              <span class="gallery-card-tag">Beard Grooming • Men</span>
+            </div>
+          </div>
+
+          <!-- Plate 04: Facial -->
+          <div class="gallery-card" data-category="skin">
+            <img src="images/gallery/facial.png" alt="Glow facial and extraction" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Signature Glow Facial</h3>
+              <span class="gallery-card-tag">Skincare &amp; De-Tan • Unisex</span>
+            </div>
+          </div>
+
+          <!-- Plate 05: Bridal -->
+          <div class="gallery-card" data-category="bridal">
+            <img src="images/gallery/bridal.png" alt="Complete bridal makeup look" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Royal Bridal Makeover</h3>
+              <span class="gallery-card-tag">Bridal Styling • Women</span>
+            </div>
+          </div>
+
+          <!-- Plate 06: Hair Spa -->
+          <div class="gallery-card" data-category="color">
+            <img src="images/services/hair.png" alt="Hair spa treatment" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Deep Nourish Hair Spa</h3>
+              <span class="gallery-card-tag">Scalp Care • Unisex</span>
+            </div>
+          </div>
+
+          <!-- Plate 07: Salon Space -->
+          <div class="gallery-card" data-category="space">
+            <img src="images/interior/station.png" alt="Ergonomic styling station" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Ergonomic Styling Station</h3>
+              <span class="gallery-card-tag">Salon Space • Bhagalpur</span>
+            </div>
+          </div>
+
+          <!-- Plate 08: Waiting Lounge -->
+          <div class="gallery-card" data-category="space">
+            <img src="images/interior/lounge.png" alt="Air conditioned waiting lounge" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Relaxation Lounge</h3>
+              <span class="gallery-card-tag">Salon Space • Bhagalpur</span>
+            </div>
+          </div>
+
+          <!-- Plate 09: Main Arena -->
+          <div class="gallery-card" data-category="space">
+            <img src="images/gallery/interior-pano.png" alt="Main hall panoramic view" loading="lazy">
+            <div class="gallery-card-overlay">
+              <h3 class="gallery-card-title">Main Hall Arena</h3>
+              <span class="gallery-card-tag">Salon Space • Bhagalpur</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:48px; text-align:center;">
+          <a href="services.html" class="btn btn-primary btn-lg">
+            View All Services &amp; Prices →
+          </a>
+        </div>
       </div>
-      <span class="mosaic-cell__tag">PLATE_001</span>
-      <div class="mosaic-cell__cats">
-        <span class="mosaic-cell__cat">HAIRCUT</span>
-        <span class="mosaic-cell__cat">FADE</span>
-      </div>
-      <h3 class="mosaic-cell__title">PRECISION CUT</h3>
-    </div>
-
-    <!-- PLATE 002 — Tall -->
-    <div class="mosaic-cell mosaic-span-1x2 mosaic-cell--offset-down gallery-item" data-category="hair" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/hair-color.png" alt="Vibrant hair colour transformation" width="400" height="600" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_002</span>
-      <h3 class="mosaic-cell__title">COLOUR WORK</h3>
-    </div>
-
-    <!-- PLATE 003 — Wide Panoramic -->
-    <div class="mosaic-cell mosaic-span-2x1 gallery-item" data-category="hair" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/interior-pano.png" alt="Heppyz Salon interior panoramic view" width="800" height="400" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_003</span>
-      <span class="mosaic-cell__float-text">Atmosphere</span>
-      <h3 class="mosaic-cell__title">THE SPACE</h3>
-    </div>
-
-    <!-- PLATE 004 — Standard -->
-    <div class="mosaic-cell gallery-item" data-category="skin" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/facial.png" alt="Relaxing facial treatment" width="400" height="400" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_004</span>
-      <h3 class="mosaic-cell__title">GLOW FACIAL</h3>
-    </div>
-
-    <!-- PLATE 005 — Scaled -->
-    <div class="mosaic-cell mosaic-cell--scale-sm gallery-item" data-category="hair" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/beard.png" alt="Clean beard styling and grooming" width="400" height="400" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_005</span>
-      <h3 class="mosaic-cell__title">BEARD DETAIL</h3>
-    </div>
-
-    <!-- PLATE 006 — Large Focus -->
-    <div class="mosaic-cell mosaic-span-2x2 gallery-item" data-category="bridal" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/gallery/bridal.png" alt="Complete bridal makeup look" width="800" height="600" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_006</span>
-      <div class="mosaic-cell__cats">
-        <span class="mosaic-cell__cat">BRIDAL</span>
-        <span class="mosaic-cell__cat">MAKEUP</span>
-      </div>
-      <h3 class="mosaic-cell__title">BRIDAL LOOK</h3>
-    </div>
-
-    <!-- PLATE 007 — Hero repeat for density -->
-    <div class="mosaic-cell mosaic-span-1x2 gallery-item" data-category="hair" data-reveal>
-      <div class="mosaic-cell__img-wrap">
-        <img src="images/hero/hero-main.png" alt="Stylist at work in the main hall" width="400" height="600" loading="lazy">
-      </div>
-      <span class="mosaic-cell__tag">PLATE_007</span>
-      <h3 class="mosaic-cell__title">IN SESSION</h3>
-    </div>
-
-  </div>
+    </section>
 
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer"><div class="footer-grid"><div class="footer-col"><img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="footer-logo"><p class="footer-brand-desc">Bhagalpur's go-to salon for hair, skin, and style. Men and women — everyone's welcome.</p><div class="footer-social"><a href="https://www.instagram.com/heppyzsalon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919297547403" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a></div></div><div class="footer-col"><h4>Pages</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-col"><h4>Services</h4><a href="services.html">Hair Care</a><a href="services.html">Skin Care</a><a href="services.html">Makeup</a><a href="services.html">Bridal</a></div><div class="footer-col"><h4>Reach Us</h4><p>📍 Khanjarpur, Bhagalpur</p><p>📞 <a href="tel:9297547403">929-754-7403</a></p><p>💬 <a href="https://wa.me/919297547403" target="_blank" rel="noopener noreferrer">WhatsApp</a></p></div></div><div class="footer-bottom"><p>© 2025 HEPPYZ SALON · BHAGALPUR</p><p>CRAFTED WITH CARE</p></div></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="logo/heppy_salon_white.png" alt="Heppyz Salon" class="footer-logo">
+          <p class="footer-desc">
+            Bhagalpur's go-to neighborhood unisex salon for hair, beard, skincare, and bridal styling. Transparent pricing, sterilized tools, and genuine warmth.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.instagram.com/heppyzsalon" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/919297547403" class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Rate Card</a></li>
+            <li><a href="gallery.html">Lookbook</a></li>
+            <li><a href="about.html">About &amp; Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Top Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html">Precision Haircut (₹299)</a></li>
+            <li><a href="services.html">Beard Craft &amp; Shave (₹149)</a></li>
+            <li><a href="services.html">Active Radiance De-Tan (₹349)</a></li>
+            <li><a href="services.html">Deep Nourish Hair Spa (₹399)</a></li>
+            <li><a href="services.html">Signature Glow Facial (₹599)</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Reach Us</h4>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">location_on</span>
+            <span>R B Surya Parshad Lane, Khanjarpur, Bhagalpur</span>
+          </div>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">call</span>
+            <a href="tel:9297547403">929-754-7403</a>
+          </div>
+          <div class="footer-contact-line">
+            <span class="material-symbols-outlined" style="color:var(--gold); font-size:18px;">schedule</span>
+            <span>Mon–Sat: 9:15 AM–9:00 PM<br>Sun: 10:00 AM–7:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HEPPYZ SALON · BHAGALPUR. ALL RIGHTS RESERVED.</p>
+        <p>TRANSPARENT PRICING · CERTIFIED HYGIENE</p>
+      </div>
+    </div>
+  </footer>
 
-  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span>Message Us</span></a>
-  <div class="lightbox" id="lightbox"><button class="lightbox__close" aria-label="Close">✕</button><button class="lightbox__prev" aria-label="Previous">←</button><img class="lightbox__img" src="" alt="Gallery preview"><button class="lightbox__next" aria-label="Next">→</button></div>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox__close" aria-label="Close lightbox">✕</button>
+    <button class="lightbox__prev" aria-label="Previous image">←</button>
+    <img class="lightbox__img" src="" alt="Lookbook transformation preview">
+    <button class="lightbox__next" aria-label="Next image">→</button>
+  </div>
+
+  <a href="https://wa.me/919297547403?text=Hi%20Heppyz!%20I%20want%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" aria-label="Book on WhatsApp" rel="noopener noreferrer">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>WhatsApp Us</span>
+  </a>
 
   <script src="js/main.js" defer></script>
   <script src="js/animations.js" defer></script>
