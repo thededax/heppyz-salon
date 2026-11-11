@@ -14,7 +14,7 @@
   <meta property="og:title" content="HEPPYZ SALON | Transparent Pricing Unisex Salon in Bhagalpur">
   <meta property="og:description" content="Look sharp, feel happy. Upfront ₹ prices, certified hygiene, and easy slot booking via WhatsApp.">
   <meta property="og:url" content="https://heppyzsalon.com/">
-  <meta property="og:image" content="https://heppyzsalon.com/images/hero/hero-main.png">
+  <meta property="og:image" content="https://heppyzsalon.com/images/hero/hero-salon-master.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HEPPYZ SALON | Unisex Salon in Bhagalpur">
   <meta name="twitter:description" content="Look sharp, feel happy. Upfront ₹ prices, certified hygiene, and easy slot booking.">
@@ -43,7 +43,7 @@
     "url": "https://heppyzsalon.com",
     "telephone": "+919297547403",
     "priceRange": "₹149 - ₹2499",
-    "image": "https://heppyzsalon.com/images/hero/hero-main.png",
+    "image": "https://heppyzsalon.com/images/hero/hero-salon-master.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "R B Surya Parshad Lane, Khanjarpur",
@@ -170,11 +170,22 @@
 
   <main id="main-content">
 
-    <!-- 3. HERO SECTION (6/6 WARM SPLIT) -->
-    <section class="hero-split home-hero">
-      <div class="container">
+    <!-- 3. HERO SECTION (FULL BACKGROUND IMAGE WITH CINEMATIC LIGHTING) -->
+    <section class="hero-full home-hero">
+      <!-- Full Background Image with Directional Cinematic Overlay -->
+      <div class="hero-full__bg" aria-hidden="true">
+        <img src="images/hero/hero-salon-master.jpg" 
+             alt="Heppyz Salon Master Barber Experience" 
+             class="hero-full__bg-img" 
+             width="1024" 
+             height="576" 
+             fetchpriority="high">
+        <div class="hero-full__bg-overlay"></div>
+      </div>
+
+      <div class="container hero-full__container">
         <div class="hero-grid">
-          <!-- Left Column -->
+          <!-- Left Column: Primary Pitch, Headline & CTAs -->
           <div class="hero-content">
             <div class="hero-badge">
               <span class="material-symbols-outlined" style="font-size:16px;">verified</span>
@@ -216,25 +227,32 @@
             </div>
           </div>
 
-          <!-- Right Column: 2-Card Bento Visual -->
-          <div class="hero-bento">
-            <div class="bento-card bento-card--tall">
-              <img src="images/gallery/hair-cut.png" alt="Precision haircut by Heppyz expert stylist" width="600" height="700">
-              <div class="bento-label">
-                <span>Precision Cuts &amp; Fade</span>
-                <span class="bento-label__tag">From ₹299</span>
+          <!-- Right Column: Glassmorphic Highlights & Interactive Popular Combo Card -->
+          <div class="hero-glass-col">
+            <!-- Glassmorphic Salon Status Card -->
+            <div class="hero-glass-card">
+              <div class="glass-status-header">
+                <span class="live-pulse"></span>
+                <span class="glass-status-title">Chairs Ready • Walk-Ins Welcome</span>
+                <span class="glass-rating"><span class="stars">★★★★★</span> 4.9</span>
+              </div>
+              <p class="glass-status-desc">
+                Clean, unhurried styling with senior barbers &amp; skin specialists. Zero crowded queues when you reserve your chair online or on WhatsApp.
+              </p>
+              <div class="glass-badges-row">
+                <span class="glass-chip">
+                  <span class="material-symbols-outlined">sanitizer</span> Autoclave Sterile
+                </span>
+                <span class="glass-chip">
+                  <span class="material-symbols-outlined">brush</span> L'Oréal &amp; Matrix
+                </span>
+                <span class="glass-chip">
+                  <span class="material-symbols-outlined">currency_rupee</span> Zero Hidden Fees
+                </span>
               </div>
             </div>
 
-            <div class="bento-card bento-card--short">
-              <img src="images/services/makeup.png" alt="Skin glow and styling at Heppyz" width="600" height="500">
-              <div class="bento-label">
-                <span>Glow Facials &amp; Skin</span>
-                <span class="bento-label__tag">From ₹349</span>
-              </div>
-            </div>
-
-            <!-- Floating Popular Combo Badge -->
+            <!-- Floating Popular Combo Badge (Interactive 1-tap select) -->
             <div class="hero-floating-combo" onclick="window.heppyzSelectCombo('combo-glow')" style="cursor:pointer;" title="Tap to pick this combo">
               <div class="floating-combo__icon">
                 <span class="material-symbols-outlined">auto_awesome</span>
